@@ -3,12 +3,276 @@
 {% block title %}Ophthalmic surgeon{% endblock %}
 
 {% block body %}
-    <div class="container">
-    <h1 class="my-5 texter-center">Welcome</h1>
-        <div class="row">
-            <div class="col">
-                <h2>Test</h2>
-            </div>
-        </div>
-    </div>
+	<div class="bloc-page">
+
+		<header id="header" class="header fixed-top">
+			<nav class="navbar navbar-expand-lg js-navbar-scroll">
+				<a class="navbar-brand" href="#"><img id="logo" src="/images/logo/logo.png" alt="logo radwan eye specialist"></a>
+				<button class="navbar-toggler navbar-toggler-right navbar-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a id="link-home" class="nav-link" href="#">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">About me</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Research</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Publications</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		<section id="hero" class="hero">
+			<div class="display-hero">
+				<div class="col-6 mx-auto mb-4 mb-sm-0 headline text-center">
+					<h1 class="my-1">Dr
+						<span id="fullName">Mahmoud Radwan</span>
+					</h1>
+					<small class="badge bg-light badge-pill ">MB ChB (hons), FRCOphth, FEBOphth</small><br>
+					<em>Cataract and Glaucoma Surgeon</em>
+				</div>
+				<div class="col-6 clipped"></div>
+			</div>
+		</section>
+
+		<section id="about" class="about">
+			<div class="wrap">
+				<div class="card">
+					<div class="card-pic-wrap">
+						<img src="/images/gallery/radwan-3.png" alt="Picture of Dr Radwan">
+						</div>
+						<div class="card-content">
+						<h3>About Mahmoud Radwan</h3>
+						<p>I work as a consultant ophthalmic surgeon and I have special interest in management of glaucoma and complex cataract surgery.
+						
+							I graduated from South Valley University in 2002 ands I did my higher specialist Ophthalmology training in Cardiff, Edinburgh and Cambridge university hospitals.
+						
+							I completed a Senior Glaucoma Fellowship in Glaucoma and Cataract surgeries from the prestigious Western Eye Hospital, London.
+							
+							During my Advanced training in glaucoma, I had the opportunity to acquire extensive and comprehensive expertise in Glaucoma and complex and challenging cataract surgeries.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	
+		<section class="eye-disease">
+			<button class="btn-eye-disease" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+				What is the cataract ?
+			</button>
+		
+			<div class="collapse" id="collapseExample">
+				<div class="card card-body">
+					<strong>
+						Cataract is a cloudy natural lens of the eye. The lens become cloudy instead of being crystal clear. Cataracts block light, making it difficult to see clearly. Cataracts are very common as you get older often develop slowly and can affect one or both eyes.
+						How will the cataract affect you?
+						When the cataracts develop, initially you will not feel any difference but over time, cataracts can make your vision blurry, hazy, or less colourful. You may have trouble reading or doing other everyday activities. Drivers will get glare as the cataracts grow.
+					</strong>
+					<hr>
+					<h5 class="text-center">Examples of cataract</h5>
+					<img src="/images/disease/cataract.jpg" id="cataract-image" alt="exemples of cataract">
+					<hr>
+					<h5>Causes of cataracts</h5>
+					<p>
+						Cataracts mainly occur as a you grow up. There are many other diseases that than cause the cataract to grow faster or at a younger age for example Diabetes and inflammation of the middle and internal layers of the eye, very rarely people are born with cataract.
+					</p>
+					<hr>
+					<h5>Other risk factors for developing cataract</h5>
+					<ul>
+						<li>Smoking</li>
+						<li>Drinking too much alcohol</li>
+						<li>Have a family history of cataracts</li>
+						<li>Have had an eye injury, eye surgery, or radiation treatment on your upper body</li>
+						<li>Have spent a lot of time in the sun</li>
+						<li>ake steroids (medicines used to treat a variety of health problems, like arthritis and rashes)</li>
+					</ul>
+					<hr>
+					<h5>Treatment</h5>
+					<p>
+						During the past decade cataract treatment evolved significantly from a very large incision to the use of Femtolaser. That is performed under a topical anaesthesia with a very quick recovery time.	
+						The human lens is then replaced with artificial lens. Cataract surgery can correct both near and distance vision. They minimize or eliminate the need for reading glasses after surgery. Conventional "monofocal" lenses only correct for distance vision, meaning reading glasses			
+						are still needed after surgery. Multifocal IOLs (Intraocular Lens) can be an option in some patients to help improve both distance and near vision. "Toric" implants are available to correct astigmatism.
+					</p>
+			</div>
+		</section>
+
+		<section id="area-expertise" class="area-expertise">
+			<div class="wrap">
+				<div class="card">
+					<div class="card-pic-wrap">
+						<img src="/images/gallery/radwan-1.jpg" alt="Picture of Dr Radwan">
+						</div>
+						<div class="card-content">
+						<h3>Area of expertise</h3>
+						<p>I’m interested in management of all forms of glaucoma using different approaches that include medical and interventional techniques tailored to each patient.
+						I perform different glaucoma surgeries including Augment Trabeculectomy, Baerveldt and Ahmed drainage tube surgery, laser peripheral iridotomy (Yag PI), MIGS drainage surgery (minimally invasive glaucoma surgery), and selective laser trabeculoplasty (SLT).
+						I also perform the MDLT (MicroPulse  Diode Laser Therapy) and ECP ( Endoscopic Cyclophoto-coagulation) Laser treatment for glaucoma.
+						I’m also highly trained in complex cataract surgery and Ophthalmic emergencies.</p>				
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="awards" class="awards">
+			<div class="wrap">
+				<div class="card">
+					<div class="card-pic-wrap">
+						<img src="/images/logo/awards.png" alt="awards logo">
+						</div>
+						<div class="card-content">
+						<p><i class="fas fa-award icone-award"></i>
+							Scottish ophthalmological club Prize Sterling 2016
+						</p>
+						<p><i class="fas fa-award icone-award"></i>
+							Laser Research Project Prize Cairo 2009
+						</p>
+						<p><i class="fas fa-award icone-award"></i>
+							Article of the Year Sohag 2005
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="publications" class="publications">
+			<div class="wrap">
+				<div class="card">
+					<div class="card-pic-wrap">
+						<img src="/images/logo/publications.png" alt="publications logo">
+					</div>
+					<div class="card-content">
+						<h3 class="subtitle-publications-first">Regional and national Presentations</h3>
+						<ul>
+							<li>
+								A multi-centre interventional case series of 259 ab-interno Xen gel implants for
+								glaucoma, with and without combined cataract surgery. Eye. Epub 24 October 2018.
+							</li>
+							<li>
+								10 years follow up and outcomes of Basal cell carcinoma Small margin
+								excisional biopsy ESO 2017 Barcelona, Spain
+							</li>
+							<li>
+								Cataract surgery planning in amblyopic patients, ESO 2015 Vienna, Austria.
+							</li>
+							<li>
+								Prominent iris vascular tufts as a cause of recurrent spontaneous hyphema in
+								thyroid eye disease SOC 2014 Edinburgh, UK
+							</li>
+							<li>
+								Dysthyroid Optic neuropathy, Welsh ophthalmic forum 2012 Carmarthen UK.
+							</li>
+							<li>
+								Dacyrocystocele case presentation SWOPS 2012 Cardiff, UK.
+							</li>
+						</ul>
+
+						<h3 class="subtitle-publications">International Poster</h3>
+						<ul>
+							<li>
+								18 months follow up and outcomes of XEN implant with and without cataract surgery, EGS Florence, 2018
+							</li>
+							<li>
+								Prominent iris vascular tufts as a cause of recurrent spontaneous hyphaema in thyroid eye disease. Presented at the ESO 2015 Vienna, Austria
+							</li>
+							<li>
+								Long-term outcomes of Phaco-Trabeculectmoy surgery with antimetabolite use.
+								Glaucoma world congress Paris, France 2011
+							</li>
+						</ul>
+
+						<h3 class="subtitle-publications">Publications</h3>
+
+						<ul>
+							<li>
+								A multi-centre interventional case series of 259 ab-interno Xen gel
+								implants for glaucoma, with and without combined cataract surgery. Eye
+								(Lond). 2018 Oct 24. doi: 10.1038/s41433-018-0243-8
+							</li>
+							<li>
+								Hyperviscosity Syndrome: Waldenstrom’s macroglobulinaemia presenting
+								as bilateral central retinal vein occlusion, RETINA. 38(1):203-206, January
+								2018
+							</li>
+							<li>
+								The Short to Medium-Term Risks of Intracameral Phenylephrine published
+								in Middle East African Journal of Ophthalmology, Volume 19, Number 4,
+								October - December 2012 page 357.
+							</li>
+							<li>
+								An Ethical Dilemma in Ophthalmology, Understanding the Patient’s
+								Agenda published in the foundation years’ journal
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="gallery" class="gallery">
+			<div class="container-fluid">
+				<h1>Some pictures of dr Mahmoud</h1>
+					<ul id="imageGallery">
+						<li>
+							<a href="/images/gallery/radwan-1.jpg">
+								<img class="js-target-img-gallery" src="/images/gallery/radwan-1.jpg" alt="picture of Dr Mahmoud">
+							</a>
+						</li>
+						<li>
+							<a href="/images/gallery/radwan-2.jpg">
+								<img class="js-target-img-gallery" src="/images/gallery/radwan-2.jpg" alt="picture of Dr Mahmoud">
+							</a>
+						</li>
+						<li>
+							<a href="/images/gallery/radwan-3.png">
+								<img class="js-target-img-gallery" src="/images/gallery/radwan-3.png" alt="picture of Dr Mahmoud">
+							</a>
+						</li>
+						<li>
+							<a href="/images/gallery/radwan-4.jpg">
+								<img class="js-target-img-gallery" src="/images/gallery/radwan-4.jpg" alt="picture of Dr Mahmoud">
+							</a>
+						</li>
+						<li>
+							<a href="/images/gallery/radwan-5.jpg">
+								<img class="js-target-img-gallery" src="/images/gallery/radwan-5.jpg" alt="picture of Dr Mahmoud">
+							</a>
+						</li>
+						<li>
+							<a href="/images/gallery/radwan-6.jpg">
+								<img class="js-target-img-gallery" src="/images/gallery/radwan-6.jpg" alt="picture of Dr Mahmoud">
+							</a>
+						</li>
+					</ul>
+				</div>
+		</section>
+
+		<footer id="bloc-footer" class="bloc-footer">
+			<div class="text-center">
+				<div class="content-footer">
+					<a href="#" target="_blank">
+						<i class="fab fa-linkedin-in" aria-hidden="true"></i>
+					</a>
+					<a href="#" target="_blank">
+						<i class="fab fa-facebook" aria-hidden="true"></i>
+					</a>
+					<a href="mailto:">
+						<i class="fas fa-envelope" aria-hidden="true"></i>
+					</a>
+					<p>© all right reserved - 2020</p>
+					<small>Contact webmaster</small>
+				</div>
+			</div>
+		</footer>
+	</div>
+
 {% endblock %}

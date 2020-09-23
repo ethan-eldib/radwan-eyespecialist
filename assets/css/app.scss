@@ -1,0 +1,293 @@
+@import "~bootstrap/scss/bootstrap";
+@import "variables";
+
+.bloc-page {
+
+  h1,
+  h2,
+  h3,
+  p,
+  a,
+  li {
+    font-family: 'Roboto', serif;
+  }
+}
+
+.header {
+  transition: all 0.35s;
+
+  .navbar-nav {
+    line-height: 9px;
+  }
+
+  .navbar {
+    justify-content: start;
+    padding: 0rem 0rem;
+  }
+
+  .fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+
+  #logo {
+    max-width: 168px;
+    max-height: 168px;
+
+  }
+
+  .nav-link {
+    color: white;
+  }
+
+  .scroll {
+    min-height: 15px;
+    background: #02b4f0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: all 0.35s ease;
+
+    .nav-link {
+      transition: all 0.35s ease;
+    }
+
+    #logo {
+      max-width: 125px;
+      max-height: 125px;
+      transition: 0.35s ease;
+    }
+  }
+}
+
+.hero {
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .display-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, #00BFFF, #04a7de);
+  }
+
+  #fullName {
+    font-weight: bold;
+    color: white;
+  }
+
+  small {
+    color: rgb(0, 0, 0);
+    font-size: 0.6rem;
+  }
+
+  em {
+    color: white;
+    font-size: 0.6rem;
+  }
+
+  span {
+    color: white;
+    text-shadow: $textShadow;
+  }
+
+  .headline {
+    left: 0px;
+  }
+
+  .clipped {
+    clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+    min-height: 100vh;
+    background-image: url('/images/gallery/radwan-7.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.area-expertise,
+.about,
+.awards,
+.publications {
+  position: relative;
+
+  .wrap {
+    height: 100%;
+  }
+
+  .card {
+    display: flex;
+    flex: 0 0 auto;
+    background: #fff;
+    max-width: 700px;
+    margin: 80px 0;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  }
+
+  .card-pic-wrap {
+    border-radius: 5px 0 0 5px;
+    width: 300px;
+    flex: 0 0 auto;
+    position: relative;
+    background: linear-gradient(to bottom, #00BFFF, #04a7de);
+
+    img {
+      position: absolute;
+      bottom: 3em;
+      left: -3%;
+      width: 250px;
+      -webkit-box-reflect: below -1px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(76%, transparent), to(rgba(250, 250, 250, 0.15)));
+    }
+  }
+
+  .card-content {
+    padding: 1em 0.2em 0em;
+
+    h3 {
+      font-size:1.2rem;
+    }
+
+    ul {
+      font-size: 0.8rem;
+    }
+  }
+
+  @media (max-width: 790px) {
+    body {
+      overflow-x: hidden;
+    }
+
+    .wrap {
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-top: 200px;
+    }
+
+    .card {
+      flex-direction: column;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+
+    .card-pic-wrap {
+      width: 100%;
+      border-radius: 5px 5px 0 0;
+
+      img {
+        bottom: 71px;
+        border-radius: 7px;
+        position: relative;
+      }
+    }
+
+    .card-content {
+
+      h3 {
+        font-size:1.2rem;
+      }
+  
+      ul {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+.gallery {
+
+  margin-top: 200px;
+  margin-bottom: 200px;
+
+  h1 {
+    font-size:1.5rem ;
+  }
+
+  img {
+    max-width: 155px;
+    max-height: 155px;
+    border: 10px solid darken(#04a8e0, 20%);
+    margin: 10px;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  .container-fluid {
+    width: 100%;
+    text-align: center;
+  }
+
+}
+
+.bloc-footer {
+  background: linear-gradient(to top, #00BFFF, #04a7de);
+  height: 60vh;
+  color: white;
+
+  .content-footer {
+    padding: 10rem 0rem 0rem 0rem;
+  }
+
+  i {
+    color: white;
+    font-size: 1.9rem;
+    border: 1px solid white;
+    padding: 15px;
+    border-radius: 50%;
+    margin: 0px 15px 35px 15px;
+
+    &:hover {
+      background-color: white;
+      color: #04a7de;
+      transition: 0.4s ease-in-out;
+    }
+  }
+}
+
+
+.eye-disease {
+  position: absolute;
+
+  .card-body {
+    padding: 0rem 2rem;
+  }
+
+  .card {
+    background-color: #ffffffe8;
+    border-radius: 0px;
+  }
+
+  #cataract-image {
+    max-width: 370px;
+    max-height: 140px;
+    border-radius: 5px;
+    align-self: center;
+  }
+
+  .btn-eye-disease {
+    background-color: #00BFFF;
+    border: 2px solid #fffffff7;
+    border-bottom-right-radius: 15px;
+
+    &:hover {
+      background-color: darken(#04a8e0, 20%);
+      color: white;
+      transition: 0.35s ease-in;
+    }
+
+    &:focus {
+      outline: 0;
+    }
+  }
+
+}
