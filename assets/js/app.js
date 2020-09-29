@@ -14,7 +14,8 @@ import $ from 'jquery';
 global.$ = global.jQuery = $;
 
 require('bootstrap');
-require('./test.js');
+require('./main.js');
+
 
 
 

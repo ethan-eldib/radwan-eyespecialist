@@ -4,6 +4,8 @@
 
 {% block body %}
 	<div class="bloc-page">
+		
+		<div id="scroll-to-top"><i class="fas fa-arrow-up"></i></div>
 
 		<header id="header" class="header fixed-top">
 			<nav class="navbar navbar-expand-lg js-navbar-scroll">
@@ -13,20 +15,20 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav mr-auto">
-						<li class="nav-item active">
-							<a id="link-home" class="nav-link" href="#">Home</a>
+						{# <li class="nav-item active">
+							<a id="link-home" class="js-anchor-link nav-link hover hover-underline " href="#">Home</a>
+						</li> #}
+						<li class="nav-item ">
+							<a class="js-anchor-link nav-link hover hover-underline " href="#target-about">About</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">About me</a>
+							<a class="js-anchor-link nav-link hover hover-underline " href="#target-area-expertise">Research</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Research</a>
+							<a class="js-anchor-link nav-link hover hover-underline " href="#target-publications">Publications</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Publications</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Contact</a>
+							<a class="js-anchor-link nav-link hover hover-underline " href="#target-contact">Contact</a>
 						</li>
 					</ul>
 				</div>
@@ -36,7 +38,7 @@
 		<section id="hero" class="hero">
 			<div class="display-hero">
 				<div class="col-6 mx-auto mb-4 mb-sm-0 headline text-center">
-					<h1 class="my-1">Dr
+					<h1 class="my-1">Mr
 						<span id="fullName">Mahmoud Radwan</span>
 					</h1>
 					<small class="badge bg-light badge-pill ">MB ChB (hons), FRCOphth, FEBOphth</small><br>
@@ -46,75 +48,166 @@
 			</div>
 		</section>
 
-		<section id="about" class="about">
+		<div id="target-about"  ></div>
+		<section class="about">
 			<div class="wrap">
+				<h3>About Mahmoud Radwan</h3>
 				<div class="card">
 					<div class="card-pic-wrap">
 						<img src="/images/gallery/radwan-3.png" alt="Picture of Dr Radwan">
 						</div>
 						<div class="card-content">
-						<h3>About Mahmoud Radwan</h3>
-						<p>I work as a consultant ophthalmic surgeon and I have special interest in management of glaucoma and complex cataract surgery.
-						
-							I graduated from South Valley University in 2002 ands I did my higher specialist Ophthalmology training in Cardiff, Edinburgh and Cambridge university hospitals.
-						
-							I completed a Senior Glaucoma Fellowship in Glaucoma and Cataract surgeries from the prestigious Western Eye Hospital, London.
-							
+						<p>I work as a consultant ophthalmic surgeon and I have special interest in management of glaucoma and complex cataract surgery. <br><br>
+							I graduated from South Valley University in 2002 ands I did my higher specialist Ophthalmology training in Cardiff, Edinburgh and Cambridge university hospitals. <br><br>
+							I completed a Senior Glaucoma Fellowship in Glaucoma and Cataract surgeries from the prestigious Western Eye Hospital, London. <br><br>		
 							During my Advanced training in glaucoma, I had the opportunity to acquire extensive and comprehensive expertise in Glaucoma and complex and challenging cataract surgeries.</p>
 					</div>
 				</div>
 			</div>
 		</section>
 	
+		<div id="target-area-expertise" ></div>
 		<section class="eye-disease">
-			<button class="btn-eye-disease" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-				What is the cataract ?
-			</button>
-		
-			<div class="collapse" id="collapseExample">
-				<div class="card card-body">
-					<strong>
-						Cataract is a cloudy natural lens of the eye. The lens become cloudy instead of being crystal clear. Cataracts block light, making it difficult to see clearly. Cataracts are very common as you get older often develop slowly and can affect one or both eyes.
-						How will the cataract affect you?
-						When the cataracts develop, initially you will not feel any difference but over time, cataracts can make your vision blurry, hazy, or less colourful. You may have trouble reading or doing other everyday activities. Drivers will get glare as the cataracts grow.
-					</strong>
-					<hr>
-					<h5 class="text-center">Examples of cataract</h5>
-					<img src="/images/disease/cataract.jpg" id="cataract-image" alt="exemples of cataract">
-					<hr>
-					<h5>Causes of cataracts</h5>
-					<p>
-						Cataracts mainly occur as a you grow up. There are many other diseases that than cause the cataract to grow faster or at a younger age for example Diabetes and inflammation of the middle and internal layers of the eye, very rarely people are born with cataract.
-					</p>
-					<hr>
-					<h5>Other risk factors for developing cataract</h5>
-					<ul>
-						<li>Smoking</li>
-						<li>Drinking too much alcohol</li>
-						<li>Have a family history of cataracts</li>
-						<li>Have had an eye injury, eye surgery, or radiation treatment on your upper body</li>
-						<li>Have spent a lot of time in the sun</li>
-						<li>ake steroids (medicines used to treat a variety of health problems, like arthritis and rashes)</li>
-					</ul>
-					<hr>
-					<h5>Treatment</h5>
-					<p>
-						During the past decade cataract treatment evolved significantly from a very large incision to the use of Femtolaser. That is performed under a topical anaesthesia with a very quick recovery time.	
-						The human lens is then replaced with artificial lens. Cataract surgery can correct both near and distance vision. They minimize or eliminate the need for reading glasses after surgery. Conventional "monofocal" lenses only correct for distance vision, meaning reading glasses			
-						are still needed after surgery. Multifocal IOLs (Intraocular Lens) can be an option in some patients to help improve both distance and near vision. "Toric" implants are available to correct astigmatism.
-					</p>
+			<h3>Area of expertise</h3>
+			<p id="subtitle-eye-disease">To learn more about glaucoma and cataract, click on one of the buttons below</p>
+			<div class="eye-disease-cataract">
+				<div class="wrapper">
+					<button class="modal-toggle-cataract modal-toggle">What is the cataract ?</button>
+				</div>
+
+				<div class="modal-disease-cataract">
+					<div class="modal-overlay modal-toggle-cataract"></div>
+					<div class="modal-wrapper modal-transition">
+						<div class="modal-header">
+							<a href="#" class="modal-close">X</a>
+							<h2 class="modal-heading">Doctor Radwan's response</h2>
+						</div>
+
+					<div class="modal-body">
+						<div class="modal-content">
+							<p>
+								Cataract is a cloudy natural lens of the eye. The lens become cloudy instead of being crystal clear.
+								Cataracts block light, making it difficult to see clearly. Cataracts are very common as you get older often
+								develop slowly and can affect one or both eyes.
+								How will the cataract affect you?
+								When the cataracts develop, initially you will not feel any difference but over time, cataracts can make
+								your vision blurry, hazy, or less colourful. You may have trouble reading or doing other everyday
+								activities. Drivers will get glare as the cataracts grow.
+							</p>
+
+							<h5>Examples of cataract</h5>
+							<img src="/images/disease/cataract.jpg" id="cataract-image" alt="exemples of cataract">
+							<hr>
+							<h5>Causes of cataracts</h5>
+							<p>
+								Cataracts mainly occur as a you grow up. There are many other diseases that than cause the cataract to grow
+								faster or at a younger age for example Diabetes and inflammation of the middle and internal layers of the
+								eye, very rarely people are born with cataract.
+							</p>
+							<hr>
+							<h5>Other risk factors for developing cataract</h5>
+							<ul>
+								<li>Smoking</li>
+								<li>Drinking too much alcohol</li>
+								<li>Have a family history of cataracts</li>
+								<li>Have had an eye injury, eye surgery, or radiation treatment on your upper body</li>
+								<li>Have spent a lot of time in the sun</li>
+								<li>ake steroids (medicines used to treat a variety of health problems, like arthritis and rashes)</li>
+							</ul>
+							<hr>
+							<h5>Treatment</h5>
+							<p>
+								During the past decade cataract treatment evolved significantly from a very large incision to the use of
+								Femtolaser. That is performed under a topical anaesthesia with a very quick recovery time.
+								The human lens is then replaced with artificial lens. Cataract surgery can correct both near and distance
+								vision. They minimize or eliminate the need for reading glasses after surgery. Conventional "monofocal"
+								lenses only correct for distance vision, meaning reading glasses
+								are still needed after surgery. Multifocal IOLs (Intraocular Lens) can be an option in some patients to help
+								improve both distance and near vision. "Toric" implants are available to correct astigmatism.
+							</p>
+						</div>
+					</div>
+					<a href="#" class="modal-close modal-close-bottom">Close</a>	
+					</div>
+				</div>
+			</div>
+			<div class="eye-disease-glaucoma">
+				<div class="wrapper">
+					<button class="modal-toggle-glaucoma modal-toggle">What is the glaucoma ?</button>
+				</div>
+
+				<div class="modal-disease-glaucoma">
+					<div class="modal-overlay modal-toggle-glaucoma"></div>
+					<div class="modal-wrapper modal-transition">
+						<div class="modal-header">
+							<a href="#" class="modal-close">X</a>
+							<h2 class="modal-heading">Doctor Radwan's response</h2>
+						</div>
+
+					<div class="modal-body">
+						<div class="modal-content">
+							<p>
+								Glaucoma is a complex disease in which damage to the optic nerve which connects the eye to the brain, leads to progressive, irreversible vision loss. Glaucoma is the second leading cause of blindness.
+								It usually happens when fluid builds up in the front part of your eye. That extra fluid increases the pressure in your eye, damaging the optic nerve.
+							</p>
+
+							<h5>Development of Glaucoma</h5>
+							<img src="/images/disease/glaucoma.png" id="glaucoma-image" alt="exemples of glaucoma">
+							<p>
+								There are many different types of glaucoma, but the most common type is called open-angle glaucoma — that’s what most people mean when they talk about glaucoma. Other types of glaucoma are less common, like angle-closure glaucoma and congenital glaucoma.
+							</p>
+							<hr>
+							<h5>Symptoms of Glaucoma</h5>
+							<p>
+								Glaucoma is a slowly developing disease and often doesn’t cause noticeable symptoms until damage has already occurred. Sometimes people experience acute glaucoma which causes a sudden onset of severe eye pain and blurred vision.
+							</p>
+							<hr>
+							<h5>When glaucoma does cause symptoms, these might include</h5>
+							<ul>
+								<li>Blurred and reduced vision starting with peripheral vision (outer edges) and develops very slowly. </li>
+								<li>Seeing rings and rainbow-coloured circles around bright lights.</li>
+								<li>Severe eye pain that comes on suddenly. This might be accompanied by redness and tenderness of the eye and surrounding area, plus a headache, nausea and vomiting. </li>
+							</ul>
+							<hr>
+							<h5>Treatment</h5>
+							<p>
+								Screening is a key point in diagnosing glaucoma early and we advise people who have a family history of glaucoma to have their eye checked annually as glaucoma runs in the families
+								Management of glaucoma is tailored according to each patient individually 
+							</p>
+							<p><strong>Medical Treatment:</strong> Mainly drops and rarely some forms of tablets</p>
+							<p><strong>Laser Treatment:</strong> According to the degree of your glaucoma your surgeon may use different types of Laser treatment such as SLT, MDLT, Yag iridotomy, Argon Iridoplasty or Cyclodiod Laser</p>
+							<p><strong>Minimally Invasive Glaucoma Surgeries MIGS:</strong> MIGS offer intraocular pressure lowering by targeting various aspects of normal aqueous dynamics.</p>
+							<p><strong>Medical Treatment:</strong> Mainly drops and rarely some forms of tablets</p>
+							<figure>
+								<img src="/images/disease/istent.png" alt="istent inject" />
+								<figcaption>iStent Inject</figcaption>
+							</figure>
+							<figure>
+								<img src="/images/disease/implant.png" alt="Xen implant" />
+								<figcaption>Xen implant</figcaption>
+							</figure>
+							<figure>
+								<img src="/images/disease/microshunt.png" alt="presserflo microshunt" />
+								<figcaption>Presserflo microshunt</figcaption>
+							</figure>
+							<p><strong>Trabeculectomy:</strong> This is where your eye surgeon creates a small and thin flap in the sclera. He will also create a bubble in the conjunctiva called a filtration bleb. It is usually hidden under the upper eyelid and cannot be seen. Aqueous humour will be able to drain out of the eye through the flap and into the bleb. In the bleb, the fluid is absorbed by tissue around your eye, lowering eye pressure.</p>
+							<p><strong>Glaucoma drainage devices:</strong> We implant a tiny drainage tube in your eye. The glaucoma drainage implant sends the fluid to a collection area (called a reservoir). Your eye surgeon creates this reservoir beneath the covering of the eye. The fluid is then absorbed into nearby blood vessels.</p>
+						</div>
+					</div>
+					<a href="#" class="modal-close modal-close-bottom">Close</a>	
+					</div>
+				</div>
 			</div>
 		</section>
 
-		<section id="area-expertise" class="area-expertise">
+		<section class="area-expertise">
 			<div class="wrap">
 				<div class="card">
 					<div class="card-pic-wrap">
 						<img src="/images/gallery/radwan-1.jpg" alt="Picture of Dr Radwan">
 						</div>
 						<div class="card-content">
-						<h3>Area of expertise</h3>
-						<p>I’m interested in management of all forms of glaucoma using different approaches that include medical and interventional techniques tailored to each patient.
+						<p>I ’m interested in management of all forms of glaucoma using different approaches that include medical and interventional techniques tailored to each patient.
 						I perform different glaucoma surgeries including Augment Trabeculectomy, Baerveldt and Ahmed drainage tube surgery, laser peripheral iridotomy (Yag PI), MIGS drainage surgery (minimally invasive glaucoma surgery), and selective laser trabeculoplasty (SLT).
 						I also perform the MDLT (MicroPulse  Diode Laser Therapy) and ECP ( Endoscopic Cyclophoto-coagulation) Laser treatment for glaucoma.
 						I’m also highly trained in complex cataract surgery and Ophthalmic emergencies.</p>				
@@ -125,6 +218,7 @@
 
 		<section id="awards" class="awards">
 			<div class="wrap">
+			<h3>Awards</h3>
 				<div class="card">
 					<div class="card-pic-wrap">
 						<img src="/images/logo/awards.png" alt="awards logo">
@@ -144,14 +238,16 @@
 			</div>
 		</section>
 
-		<section id="publications" class="publications">
+		<div id="target-publications" ></div>
+		<section  class="publications">
 			<div class="wrap">
+			<h3>Publications</h3>
 				<div class="card">
 					<div class="card-pic-wrap">
 						<img src="/images/logo/publications.png" alt="publications logo">
 					</div>
 					<div class="card-content">
-						<h3 class="subtitle-publications-first">Regional and national Presentations</h3>
+						<h5>Regional and national Presentations</h5>
 						<ul>
 							<li>
 								A multi-centre interventional case series of 259 ab-interno Xen gel implants for
@@ -176,7 +272,7 @@
 							</li>
 						</ul>
 
-						<h3 class="subtitle-publications">International Poster</h3>
+						<h5>International Poster</h5>
 						<ul>
 							<li>
 								18 months follow up and outcomes of XEN implant with and without cataract surgery, EGS Florence, 2018
@@ -190,7 +286,7 @@
 							</li>
 						</ul>
 
-						<h3 class="subtitle-publications">Publications</h3>
+						<h5>Publications</h5>
 
 						<ul>
 							<li>
@@ -220,44 +316,38 @@
 
 		<section id="gallery" class="gallery">
 			<div class="container-fluid">
-				<h1>Some pictures of dr Mahmoud</h1>
+				<h3>Some pictures of Doctor Mahmoud</h3>
 					<ul id="imageGallery">
 						<li>
-							<a href="/images/gallery/radwan-1.jpg">
-								<img class="js-target-img-gallery" src="/images/gallery/radwan-1.jpg" alt="picture of Dr Mahmoud">
-							</a>
+							<a href="/images/gallery/radwan-1.jpg" class="open-lightbox"><img src="/images/gallery/radwan-1.jpg"></a>
 						</li>
 						<li>
-							<a href="/images/gallery/radwan-2.jpg">
-								<img class="js-target-img-gallery" src="/images/gallery/radwan-2.jpg" alt="picture of Dr Mahmoud">
-							</a>
+							<a href="/images/gallery/radwan-2.jpg" class="open-lightbox"><img src="/images/gallery/radwan-2.jpg"></a>
 						</li>
 						<li>
-							<a href="/images/gallery/radwan-3.png">
-								<img class="js-target-img-gallery" src="/images/gallery/radwan-3.png" alt="picture of Dr Mahmoud">
-							</a>
+							<a href="/images/gallery/radwan-4.jpg" class="open-lightbox"><img src="/images/gallery/radwan-4.jpg"></a>
+						</li>
+				
+						<li>
+							<a href="/images/gallery/radwan-6.jpg" class="open-lightbox"><img src="/images/gallery/radwan-6.jpg"></a>
 						</li>
 						<li>
-							<a href="/images/gallery/radwan-4.jpg">
-								<img class="js-target-img-gallery" src="/images/gallery/radwan-4.jpg" alt="picture of Dr Mahmoud">
-							</a>
-						</li>
-						<li>
-							<a href="/images/gallery/radwan-5.jpg">
-								<img class="js-target-img-gallery" src="/images/gallery/radwan-5.jpg" alt="picture of Dr Mahmoud">
-							</a>
-						</li>
-						<li>
-							<a href="/images/gallery/radwan-6.jpg">
-								<img class="js-target-img-gallery" src="/images/gallery/radwan-6.jpg" alt="picture of Dr Mahmoud">
-							</a>
+							<a href="/images/gallery/radwan-8.jpg" class="open-lightbox"><img src="/images/gallery/radwan-8.jpg"></a>
 						</li>
 					</ul>
 				</div>
 		</section>
 
-		<footer id="bloc-footer" class="bloc-footer">
+		<footer id="target-contact" class="bloc-footer">
 			<div class="text-center">
+				<div class="memberships-footer"> 
+					<h6>Professional memberships</h6>
+						<p>The Royal College of Ophthalmologists, London</p>
+						<p>European Glaucoma Society</p>
+						<p>Scottish Ophthalmology Club</p>
+						<p>Egyptian Ophthalmology Society</p>
+						<p>British Medical Association</p> 
+				</div>
 				<div class="content-footer">
 					<a href="#" target="_blank">
 						<i class="fab fa-linkedin-in" aria-hidden="true"></i>
@@ -265,11 +355,14 @@
 					<a href="#" target="_blank">
 						<i class="fab fa-facebook" aria-hidden="true"></i>
 					</a>
+					<a href="#" target="_blank">
+						<i class="fab fa-youtube" aria-hidden="true"></i>
+					</a>
 					<a href="mailto:">
 						<i class="fas fa-envelope" aria-hidden="true"></i>
 					</a>
-					<p>© all right reserved - 2020</p>
-					<small>Contact webmaster</small>
+					<p>© Copyright 2020. All rights reserved.</p>
+					<a id="contact-webmaster" href="mailto:ethan.eldib@gmail.com"><small>Contact webmaster.</small></a>				
 				</div>
 			</div>
 		</footer>
