@@ -221,7 +221,7 @@
   h3 {
     font-size: 1.7rem;
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: -40px;
 
     &::first-letter {
       color: #00BFFF;
@@ -247,16 +247,11 @@
 
   .card-pic-wrap {
     border-radius: 5px 0 0 5px;
-    width: 300px;
-    flex: 0 0 auto;
-    position: relative;
+    text-align: center;
     background: linear-gradient(to bottom, #00BFFF, #04a7de);
 
     img {
-      position: absolute;
-      bottom: 3em;
-      filter: grayscale(60%);
-      left: -3%;
+      filter: grayscale(65%);
       width: 250px;
       -webkit-box-reflect: below -1px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(76%, transparent), to(rgba(250, 250, 250, 0.15)));
     }
@@ -278,8 +273,7 @@
 
     h3 {
       font-size: 1.7rem;
-      margin-left: 29px;
-      margin-bottom: -85px;
+      margin-bottom: -140px;
     }
 
     .wrap {
@@ -293,13 +287,10 @@
 
     .card-pic-wrap {
       width: 100%;
-      height: 420px;
 
       img {
-        bottom: 7%;
-        filter: grayscale(60%);
-        left: 35%;
-        width: 366px;
+        width: 304px;
+        padding: 15px 0px;
       }
     }
 
@@ -334,9 +325,8 @@
       border-radius: 5px 5px 0 0;
 
       img {
-        bottom: 71px;
         border-radius: 7px;
-        position: relative;
+        padding: 15px 0px;
       }
     }
 
@@ -363,9 +353,17 @@
   }
 }
 
+.about {
+  .card-pic-wrap {
+    img {
+      filter: grayscale(85%) !important;
+    }
+  }
+}
+
 .eye-disease {
   position: relative;
-  margin-bottom: -123px;
+  margin-bottom: -171px;
   margin-top: 188px;
 
   h3 {
@@ -397,8 +395,8 @@
       outline-style: none;
     }
 
-    &:hover{
-      background-color: darken( #00BFFF, 30%);
+    &:hover {
+      background-color: darken(#00BFFF, 30%);
       transition: all 0.45s ease-in-out;
     }
   }
@@ -546,10 +544,6 @@
   }
 
   @media (min-width: 790px) {
-
-    & {
-      margin-bottom: -60px;
-    }
 
     .modal-toggle {
       width: 200px;
@@ -724,25 +718,23 @@
   .memberships-footer {
     margin-bottom: -14px;
     background: white;
-    padding: 10px;
-    border-radius: 7px;
-    transform: translateY(-25px);
+    padding: 20px;
+    border-radius: 0pc 0pc 4pc 4pc;
     color: black;
-    padding-bottom: 10p;
-    width: 35%;
+    max-width: 40%;
     margin: 0 auto;
-
-    h6{
-      text-decoration: underline;
-      text-decoration-color: #2E8BC0;
-    }
 
     p {
       margin-bottom: 0;
     }
   }
-}
 
+  @media (max-width: 700px) {
+    .memberships-footer {
+      max-width: 85%;
+    }
+  }
+}
 
 // Bouton scroll to the top
 #scroll-to-top {

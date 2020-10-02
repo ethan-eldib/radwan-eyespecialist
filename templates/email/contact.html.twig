@@ -1,0 +1,30 @@
+<h4>Request of appointment</h4>
+
+<table class="container header" border="0" cellpadding="0" cellspacing="0" width="620" style="width: 620px;">
+	<tbody>
+		<tr>
+			<td style="....">Last name : </td><br>
+			<td >{{ contact.lastName|escape }}</td>
+		</tr>
+		<tr>
+			<td style="....">First name : </td><br>
+			<td >{{ contact.firstName|escape }}</td>
+		</tr>
+		<tr>
+			<td style="....">Phone number : </td><br>
+			<td >{{ contact.phone|escape }}</td>
+		</tr>
+		<tr>
+			<td style="....">Email : </td><br>
+			<td >{{ contact.email|escape }}</td>
+		</tr>
+		<tr>
+			<td style="....">Reason for appointment : </td><br>
+			<td >{{ contact.disease|escape }}</td>
+		</tr>
+		<tr>
+			<td style="....">Message : </td><br>
+			<td >{{ contact.message|escape }}</td>
+		</tr>
+	</tbody>
+</table>

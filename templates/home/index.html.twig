@@ -15,9 +15,6 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav mr-auto">
-						{# <li class="nav-item active">
-							<a id="link-home" class="js-anchor-link nav-link hover hover-underline " href="#">Home</a>
-						</li> #}
 						<li class="nav-item ">
 							<a class="js-anchor-link nav-link hover hover-underline " href="#target-about">About</a>
 						</li>
@@ -51,7 +48,7 @@
 		<div id="target-about"  ></div>
 		<section class="about">
 			<div class="wrap">
-				<h3>About Mahmoud Radwan</h3>
+				<h3>About myself</h3>			
 				<div class="card">
 					<div class="card-pic-wrap">
 						<img src="/images/gallery/radwan-3.png" alt="Picture of Dr Radwan">
@@ -314,9 +311,75 @@
 			</div>
 		</section>
 
+		<section id="appointment" class="appointment">
+			{% for label, messages in app.flashes %}
+				<div class="container">
+					<div id="target-flashMessage" class="alert alert-{{ label }}">
+						{% for message in messages %}
+							<p>{{message | raw}}</p>
+						{% endfor %}
+					</div>
+				</div>
+			{% endfor %}
+			<div class="container-fluid mt-4" id="bloc-contact-sos-aut">
+				<h3>Book an appointment</h3>
+				<hr>
+				<div class="col">
+					{{ form_start(form)}}
+					<div class="form-group">
+						<div class="col-10 mx-auto">
+							<i class="fa fa-user bigicon"></i>
+							{{ form_widget(form.lastName|e)}}
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-10 mx-auto">
+							<i class="fa fa-user bigicon"></i>
+							{{ form_widget(form.firstName|e)}}
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-10 mx-auto">
+							<i class="fa fa-phone-square bigicon"></i>
+							{{ form_widget(form.phone|e)}}
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-10 mx-auto">
+							<i class="fa fa-envelope-o bigicon"></i>
+							{{ form_widget(form.email|e)}}
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-10 mx-auto">
+							<i class="fa fa-pencil-square-o bigicon"></i>
+							{{ form_widget(form.disease|e)}}
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-10 mx-auto">
+							<i class="fa fa-pencil-square-o bigicon"></i>
+							{{ form_widget(form.message|e)}}
+						</div>
+					</div>
+					<div class="col-10 mx-auto">
+						<a href="#target-flashMessage">
+							<button type="submit" class="btn btn-success btn-md rounded">
+								<i class="fas fa-check"></i>
+								Send your appointment
+							</button>
+						</a> 
+					</div>
+					{{ form_end(form)}}
+				</div>
+			</div>
+		</section>
+
+		
+
 		<section id="gallery" class="gallery">
 			<div class="container-fluid">
-				<h3>Some pictures of Doctor Mahmoud</h3>
+				<h3>Gallery</h3>
 					<ul id="imageGallery">
 						<li>
 							<a href="/images/gallery/radwan-1.jpg" class="open-lightbox"><img src="/images/gallery/radwan-1.jpg"></a>
@@ -349,11 +412,13 @@
 						<p>British Medical Association</p> 
 				</div>
 				<div class="content-footer">
+					<div id="information-mr-radwan">
+						<p>Contact Mr Mahmoud Radwan</p>
+						<p>Phone</p>
+						<p>Email</p>
+					</div>
 					<a href="#" target="_blank">
 						<i class="fab fa-linkedin-in" aria-hidden="true"></i>
-					</a>
-					<a href="#" target="_blank">
-						<i class="fab fa-facebook" aria-hidden="true"></i>
 					</a>
 					<a href="#" target="_blank">
 						<i class="fab fa-youtube" aria-hidden="true"></i>
