@@ -42,6 +42,12 @@ class Appointment
      /**
      * @var string
      * @Assert\NotBlank()
+     */
+    private $methodContact;
+
+     /**
+     * @var string
+     * @Assert\NotBlank()
      * @Assert\Length(min=10)
      */
     private $message;
@@ -114,6 +120,30 @@ class Appointment
     public function setMessage(string $message): self
     {
         $this->message = $message;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of methodContact
+     *
+     * @return  string
+     */ 
+    public function getMethodContact()
+    {
+        return $this->methodContact;
+    }
+
+    /**
+     * Set the value of methodContact
+     *
+     * @param  string  $methodContact
+     *
+     * @return  self
+     */ 
+    public function setMethodContact(string $methodContact)
+    {
+        $this->methodContact = $methodContact;
 
         return $this;
     }

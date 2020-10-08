@@ -19,32 +19,42 @@ class AppointmentType extends ApplicationType
             ->add(
                 'firstName',
                 TextType::class,
-                $this->getConfiguration('First name', "Your fisrt name")
+                $this->getConfiguration('First name', "Fisrt name")
             )
             ->add(
                 'lastName',
                 TextType::class,
-                $this->getConfiguration('Last name', "Your last name")
+                $this->getConfiguration('Last name', "Last name")
             )
             ->add(
                 'email',
                 EmailType::class,
-                $this->getConfiguration('Email', "Your email")
+                $this->getConfiguration('Email', "Email")
             )
             ->add(
                 'phone',
                 TextType::class,
-                $this->getConfiguration('Phone', "Your phone number")
+                $this->getConfiguration('Phone', "Phone number")
             )
             ->add(
                 'disease',
                 ChoiceType::class,[
                     'label' => "",
-                    'placeholder' => "-- Reason for appointment --",
+                    'placeholder' => "-- Select your choice --",
                     'choices' => [
                         'Cataract'  => 'Cataract',
                         'Glaucoma'  => 'Glaucoma',
                         'Other'     => 'Other'
+                    ]
+            ])
+            ->add(
+                'methodContact',
+                ChoiceType::class,[
+                    'label' => "",
+                    'placeholder' => "-- Select your choice --",
+                    'choices' => [
+                        'Email'  => 'Email',
+                        'Phone'  => 'Phone'
                     ]
             ])
             ->add(
