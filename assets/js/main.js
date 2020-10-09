@@ -49,25 +49,57 @@ $('body').on('click', '.lightbox-opened', function () {
 
 // Scroll to the top of the page using a button
 let btn = $('#scroll-to-top');
-$(window).scroll(function() {
-  if ($(window).scrollTop() > 300) {
-    btn.addClass('show');
-  } else {
-    btn.removeClass('show');
-  }
+$(window).scroll(function () {
+    if ($(window).scrollTop() > 300) {
+        btn.addClass('show');
+    } else {
+        btn.removeClass('show');
+    }
 });
 
-btn.on('click', function(e) {
-  e.preventDefault();
-  $('html, body').animate({scrollTop:0}, '300');
+btn.on('click', function (e) {
+    e.preventDefault();
+    $('html, body').animate({
+        scrollTop: 0
+    }, '300');
 });
 
 // Scroll smoothly when clicking on a link
 $('.js-anchor-link').click(function (e) {
     e.preventDefault();
     let target = $($(this).attr('href'));
-    if(target.length){
-      let scrollTo = target.offset().top;
-      $('body, html').animate({scrollTop: scrollTo+'px'}, 850);
+    if (target.length) {
+        let scrollTo = target.offset().top;
+        $('body, html').animate({
+            scrollTop: scrollTo + 'px'
+        }, 850);
     }
+});
+
+// Envelope animation
+$(function () {
+    let envelope = $('#envelope');
+    let btn_open = $("#open-env");
+    let btn_reset = $("#reset-env");
+
+    envelope.click(function () {
+        open();
+    });
+    btn_open.click(function () {
+        open();
+    });
+    btn_reset.click(function () {
+        close();
+    });
+
+    function open() {
+        envelope.addClass("open")
+            .removeClass("close-env");
+    }
+
+    function close() {
+        envelope.addClass("close-env")
+            .removeClass("open");
+    }
+
 });

@@ -28,7 +28,7 @@ class Email extends AbstractController {
     public function sendEmail(Appointment $contact)
     {
         $message = (new MimeEmail())
-            ->subject('Message from ' . $contact->getLastName() . ' ' . $contact->getFirstName() . ' (contact form - Radwan Eye Specialist)')
+            ->subject('Request of appointment - (contact form - Radwan Eye Specialist)')
             ->from('noreply@mradwan.com')
             ->to('eldibaliya@gmail.com')
             ->replyTo($contact->getEmail())

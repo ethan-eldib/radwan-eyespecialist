@@ -1,5 +1,6 @@
 @import "~bootstrap/scss/bootstrap";
 @import "variables";
+@import "envelope.scss";
 
 .bloc-page {
 
@@ -16,6 +17,14 @@
   a,
   li {
     font-family: 'Roboto', serif;
+  }
+
+  hr {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    border: 0;
+    width: 90%;
+    border-top: 1px solid $colorPrimary;
   }
 
   @media (min-width: 790px) {
@@ -55,12 +64,13 @@
 
   .fixed-top {
     position: fixed;
-    height: 118px;
+    height: auto;
     top: 0;
     right: 0;
     left: 0;
     z-index: 1030;
-    background: $bgcPrimary;
+    background: linear-gradient(26deg, #00000078, transparent);
+    ;
   }
 
   #logo {
@@ -173,17 +183,17 @@
 }
 
 .slider {
-  margin-top: 115px;
-  
+  margin-top: 170px;
+
   .w-100 {
     height: 565px;
   }
 
   .d-md-block {
-    background: #00000075;
-    color: white;
+    background: $bgcPrimary;
+    color: black;
 
-    p{
+    p {
       margin-bottom: 0;
     }
   }
@@ -270,7 +280,7 @@
     margin-bottom: -40px;
 
     &::first-letter {
-      color:$colorPrimary;
+      color: $colorPrimary;
       font-family: 'Dancing Script', cursive;
       font-size: 4.5rem;
     }
@@ -730,6 +740,7 @@
     width: 160px;
     border: 5px solid darken($colorPrimary, 10%);
     margin: 10px;
+    border-radius: 2px;
 
     &:hover {
       border: 5px solid lighten($colorPrimary, 10%);
@@ -738,6 +749,7 @@
   }
 
   .lightbox-opened {
+    z-index: 999999;
     background-color: #333;
     background-color: rgba(#333, 0.9);
     cursor: pointer;
@@ -758,9 +770,10 @@
       padding: 15px 20px;
       position: absolute;
       border-radius: 50%;
-      top: 208px;
-      right: 275px;
+      top: 17%;
+      right: 12%;
       text-transform: uppercase;
+
     }
 
     img {
@@ -791,36 +804,10 @@
   }
 }
 
-#thankyou-letter{
-  text-align: center;
-
-  h3 {
-    text-align: center;
-    text-decoration-color: $colorPrimary;
-    font-size: 1.7rem;
-    margin-bottom: 50px;
-
-    &::first-letter {
-      color: $colorPrimary;
-      font-family: 'Dancing Script', cursive;
-      font-size: 4.5rem;
-    }
-  }
-
-  figure{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 175px;
-  }
-
-  img{
-    max-width: 285px;
-    max-height: 285px;
-  }
-}
 
 .bloc-footer {
   background: $bgcPrimary;
+  margin-top: 100px;
   height: auto;
   color: white;
 
@@ -857,12 +844,13 @@
   #contact-webmaster {
     a {
       text-decoration: none;
-      color:black;
+      color: black;
     }
 
     i {
       color: black;
-      &:hover{
+
+      &:hover {
         color: lighten(black, 15%);
       }
     }
@@ -899,6 +887,7 @@
       border-radius: 2px;
     }
   }
+
   #insurers {
     img {
       max-width: 125px;

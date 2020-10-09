@@ -31,7 +31,17 @@
 							<a class="js-anchor-link nav-link hover hover-underline " href="#target-contact">Contact</a>
 						</li>
 					</ul>
-				</div>
+					<div id="target-flashMessage"></div>
+						{% for label, messages in app.flashes %}
+							<div  class="container">
+								<div  class="alert alert-{{ label }}">
+									{% for message in messages %}
+										<p>{{message | raw}}</p>
+									{% endfor %}
+								</div>
+							</div>
+						{% endfor %}
+					</div>
 			</nav>
 		</header>
 
@@ -86,6 +96,7 @@
 		</section>
 	
 		<section class="eye-disease">
+			<hr>
 			<h3 id="target-area-expertise">Area of expertise</h3>
 			<p id="subtitle-eye-disease">To learn more about glaucoma and cataract, click on one of the buttons below</p>
 			<div class="eye-disease-cataract">
@@ -234,6 +245,7 @@
 
 		<section id="awards" class="awards">
 			<div class="wrap">
+			<hr>
 			<h3>Awards</h3>
 				<div class="card">
 					<div class="card-pic-wrap">
@@ -256,6 +268,7 @@
 
 		<section  class="publications">
 			<div class="wrap">
+			<hr>
 			<h3 id="target-publications">Publications</h3>
 				<div class="card">
 					<div class="card-pic-wrap">
@@ -327,37 +340,25 @@
 		</section>
 
 		<section id="appointment" class="appointment">
-			{% for label, messages in app.flashes %}
-				<div class="container">
-					<div id="target-flashMessage" class="alert alert-{{ label }}">
-						{% for message in messages %}
-							<p>{{message | raw}}</p>
-						{% endfor %}
-					</div>
-				</div>
-			{% endfor %}
+			<hr>
 			<h3 id="target-appointment">Book an appointment</h3>
 			<div class="content-appointment">
 				{{form_start(form)}}
 					<div class="alert alert-light">
 						<h5 class="text-center">General informations</h5>
-						<hr>
 						{{ form_widget(form.lastName|e) }}
 						{{ form_widget(form.firstName|e) }}
 						{{ form_widget(form.phone|e) }}
 						{{ form_widget(form.email|e) }}
 					</div>
 					<div class="alert alert-light">
-						<h5 class="text-center">Reason for appointment</h5>
-						<hr>
+						<h5 class="text-center">Reason for appointment</h5>	
 						{{ form_widget(form.disease|e) }}
 						<h5 id="title-contact-method" class="text-center">Preferred contact method</h5>
-						<hr>
 						{{ form_widget(form.methodContact|e) }}
 					</div>
 					<div class="alert alert-light">
 						<h5 class="text-center">Message</h5>
-						<hr>
 						{{ form_widget(form.message|e) }}
 					</div>				
 				</div>
@@ -396,14 +397,25 @@
 		</section>
 	
 		<section id="thankyou-letter">
-		<hr>
-		<h3>Letter of thanks</h3>
-			<figure>
-				<a href="/images/letters/thanks-letter-1.jpg" class="open-lightbox"><img src="/images/letters/thanks-letter-1.jpg" alt="Letter"></a>
-				<a href="/images/letters/thanks-letter-2.jpg" class="open-lightbox"><img src="/images/letters/thanks-letter-2.jpg" alt="Letter"></a>
-				<a href="/images/letters/thanks-letter-3.jpg" class="open-lightbox"><img src="/images/letters/thanks-letter-3.jpg" alt="Letter"></a>
-				<figcaption>Click on one of the letters to enlarge it</figcaption>
-			</figure>
+			<hr>
+			<h3>Letter of thanks</h3>
+			<div class="envlope-wrapper">
+				<div id="envelope" class="close-env">
+					<div class="front flap"></div>
+					<div class="front pocket"></div>
+					<div class="letter">
+						<a href="/images/letters/thanks-letter-1.jpg" class="open-lightbox"><img src="/images/letters/thanks-letter-1.jpg" alt="Letter"></a>
+						<a href="/images/letters/thanks-letter-2.jpg" class="open-lightbox"><img src="/images/letters/thanks-letter-2.jpg" alt="Letter"></a>
+						<a href="/images/letters/thanks-letter-3.jpg" class="open-lightbox"><img src="/images/letters/thanks-letter-3.jpg" alt="Letter"></a>
+						<a href="/images/letters/thanks-letter-4.jpg" class="open-lightbox"><img src="/images/letters/thanks-letter-4.jpg" alt="Letter"></a><br>
+						<small class="badge">Click on one of the letters to enlarge it</small>
+					</div>
+				</div>
+				<div class="reset">
+					<button id="open-env">Open the letter</button>
+					<button id="reset-env">Close the letter</button>
+				</div>
+			</div>
 		</section>
 
 		<footer id="target-contact" class="bloc-footer">
@@ -422,7 +434,7 @@
 						<p><i class="fas fa-at"></i>mamoudradwan@hotmail.com</p>
 					</div>
 					<a href="http://linkedin.com/in/mahmoud-radwan-729ab332" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-					<a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+					<a href="https://youtube.com/channel/UCZag8er1bWjDucb89g78m1g" target="_blank"><i class="fab fa-youtube"></i></a>
 					<a href="mailto:mamoudradwan@hotmail.com"><i class="fas fa-envelope"></i></a>				
 				</div>
 					<div class="container" id="partners-logo">
@@ -438,7 +450,6 @@
 							</div>
 						</div>
 					</div>
-					<hr>
 					<div class="container" id="insurers">
 						<div class="row">
 							<div class="col">
