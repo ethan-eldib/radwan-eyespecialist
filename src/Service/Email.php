@@ -29,8 +29,8 @@ class Email extends AbstractController {
     {
         $message = (new MimeEmail())
             ->subject('Request of appointment - (contact form - Radwan Eye Specialist)')
-            ->from('noreply@mradwan.com')
-            ->to('eldibaliya@gmail.com')
+            ->from('noreply@radwan-eyespecialist.com')
+            ->to('contact@ethan-eldib.go.yn.fr')
             ->replyTo($contact->getEmail())
             ->html($this->renderer->render('email/contact.html.twig', [
                 'contact' => $contact

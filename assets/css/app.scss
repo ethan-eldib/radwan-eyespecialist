@@ -1,6 +1,7 @@
 @import "~bootstrap/scss/bootstrap";
 @import "variables";
 @import "envelope.scss";
+@import "services.scss";
 
 .bloc-page {
 
@@ -43,6 +44,42 @@
 .header {
   transition: all 0.35s;
 
+
+  .alert-success {
+    color: #ffffff;
+    background-color: #307233f7;
+    border-color: transparent;
+  }
+
+  .alert {
+    position: relative;
+    padding: .75rem .45rem;
+    margin-bottom: 0rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+
+
+
+    .close {
+      cursor: pointer;
+      float: none;
+      position: absolute;
+      top: -4px;
+      right: 3px;
+      font-size: 1.1rem;
+      font-weight: normal;
+      line-height: 1;
+      color: #fff;
+      text-shadow: none;
+      opacity: 1;
+    }
+
+    p {
+      margin-top: 0rem;
+      margin-bottom: 0rem;
+    }
+  }
+
   .navbar-toggler-icon {
     outline-color: white;
   }
@@ -69,7 +106,7 @@
     right: 0;
     left: 0;
     z-index: 1030;
-    background: linear-gradient(26deg, #00000078, transparent);
+    background: linear-gradient(to top, #0267bc, #53d6f7);
     ;
   }
 
@@ -142,8 +179,8 @@
     }
 
     #logo {
-      max-width: 85px;
-      max-height: 85px;
+      max-width: 75px;
+      max-height: 75px;
       transition: 0.35s ease;
     }
 
@@ -153,12 +190,12 @@
   @media (min-width: 790px) {
 
     #logo {
-      max-width: 160px;
-      max-height: 160px;
+      max-width: 130px;
+      max-height: 130px;
     }
 
     .nav-link {
-      font-size: 1.15rem;
+      font-size: 1.1rem;
       line-height: 13px;
     }
   }
@@ -183,14 +220,18 @@
 }
 
 .slider {
-  margin-top: 170px;
 
   .w-100 {
-    height: 565px;
+    position: relative;
+    bottom: -50px;
+    height: 100vh;
+    width: 60% !important;
+    margin: 0 auto;
+    border-radius: 50%;
   }
 
   .d-md-block {
-    background: $bgcPrimary;
+    background: linear-gradient(to bottom, #0267bc, #53d6f7);
     color: black;
 
     p {
@@ -209,63 +250,11 @@
     text-align: center;
   }
 
-  // h1 {
-  //   font-size: 1.6rem;
-  // }
+  .carousel-item {
+    background: #0267bc;
+  }
 
-  // .display-hero {
-  //   display: flex;
-  //   align-items: center;
-  //   justify-content: space-between;
-  //   background: $bgcPrimary;
-  // }
 
-  // #fullName {
-  //   color: white;
-  // }
-
-  // small {
-  //   color: rgb(0, 0, 0);
-  //   font-size: 0.6rem;
-  // }
-
-  // em {
-  //   color: white;
-  //   font-size: 0.6rem;
-  // }
-
-  // span {
-  //   color: white;
-  //   text-shadow: $textShadow;
-  // }
-
-  // .headline {
-  //   left: 2px;
-  //   top: 54px;
-  // }
-
-  // .clipped {
-  //   clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
-  //   min-height: 100vh;
-  //   background-image: url('/images/gallery/radwan-7.jpg');
-  //   background-position: center;
-  //   filter: grayscale(60%);
-  //   background-size: cover;
-  // }
-
-  // @media (min-width: 790px) {
-  //   h1 {
-  //     font-size: 2.8rem;
-  //   }
-
-  //   small {
-  //     font-size: 0.8rem;
-  //   }
-
-  //   em {
-  //     font-size: 1.1rem;
-  //   }
-  // }
 }
 
 .area-expertise,
@@ -804,7 +793,6 @@
   }
 }
 
-
 .bloc-footer {
   background: $bgcPrimary;
   margin-top: 100px;
@@ -896,6 +884,14 @@
       margin-right: 15px;
       border-radius: 2px;
     }
+  }
+
+  #disclaimer {
+    color: black;
+    margin: 0px 40px;
+    text-align: justify;
+    line-height: 10px;
+    font-size: 0.7rem;
   }
 
   @media (max-width: 700px) {

@@ -8,7 +8,7 @@ class Appointment
 {
      /**
      * @var string
-     * @Assert\NotBlank()
+     * @Assert\NotBlank(message="Thanks to indicate your first name")
      * @Assert\Length(min=2, max=100)
      */
     private $firstName;
@@ -48,7 +48,12 @@ class Appointment
      /**
      * @var string
      * @Assert\NotBlank()
-     * @Assert\Length(min=10)
+     * @Assert\Length(
+     *  min=10,
+     *  max=255,
+     *  minMessage = "Your message must contain at least 10 characters",
+     *  maxMessage = "Your message must contain less than 255 characters"
+     * )
      */
     private $message;
 

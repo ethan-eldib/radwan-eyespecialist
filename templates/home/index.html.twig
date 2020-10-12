@@ -6,57 +6,7 @@
 	<div class="bloc-page">
 		
 		<div id="scroll-to-top"><i class="fas fa-arrow-up"></i></div>
-
-		<header id="header" class="header">
-			<nav class="navbar navbar-expand-lg js-navbar-scroll fixed-top">
-				<a class="navbar-brand" href="#"><img id="logo" src="/images/logo/logo.png" alt="logo radwan eye specialist"></a>
-				<button class="navbar-toggler navbar-toggler-right navbar-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav mr-auto">
-						<li class="nav-item ">
-							<a class="js-anchor-link nav-link hover hover-underline " href="#target-about">About</a>
-						</li>
-						<li class="nav-item">
-							<a class="js-anchor-link nav-link hover hover-underline " href="#target-area-expertise">Research</a>
-						</li>
-						<li class="nav-item">
-							<a class="js-anchor-link nav-link hover hover-underline " href="#target-publications">Publications</a>
-						</li>
-						<li class="nav-item">
-							<a class="js-anchor-link nav-link hover hover-underline " href="#target-appointment">Appointment</a>
-						</li>
-						<li class="nav-item">
-							<a class="js-anchor-link nav-link hover hover-underline " href="#target-contact">Contact</a>
-						</li>
-					</ul>
-					<div id="target-flashMessage"></div>
-						{% for label, messages in app.flashes %}
-							<div  class="container">
-								<div  class="alert alert-{{ label }}">
-									{% for message in messages %}
-										<p>{{message | raw}}</p>
-									{% endfor %}
-								</div>
-							</div>
-						{% endfor %}
-					</div>
-			</nav>
-		</header>
-
-		{# <section id="hero" class="hero">
-			<div class="display-hero">
-				<div class="col-6 mx-auto mb-4 mb-sm-0 headline text-center">
-					<h1 class="my-1">Mr
-						<span id="fullName">Mahmoud Radwan</span>
-					</h1>
-					<small class="badge bg-light badge-pill ">MB ChB (hons), FRCOphth, FEBOphth</small><br>
-					<em>Consultant Ophthalmologist, Glaucoma specialist and Cataract surgeon</em>
-				</div>
-				<div class="col-6 clipped"></div>
-			</div>
-		</section> #}
+		
 		<section id="slider" class="slider">
 			<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
 				<div class="carousel-inner">
@@ -69,10 +19,13 @@
 						<img class="d-block w-100" src="/images/slider/eye-slider.jpg" alt="First slide">
 					</div>
 					<div class="carousel-item">
-						<img class="d-block w-100" src="/images/slider/img-slider-2.jpg" alt="Second slide">
+						<img class="d-block w-100" src="/images/slider/radwan-1.jpg" alt="Second slide">
 					</div>
 					<div class="carousel-item">
-						<img class="d-block w-100" src="/images/slider/img-slider-3.jpg" alt="Third slide">
+						<img class="d-block w-100" src="/images/slider/radwan-2.jpg" alt="Second slide">
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" src="/images/slider/radwan-3.jpg" alt="Third slide">
 					</div>
 				</div>
 			</div>
@@ -344,7 +297,7 @@
 			<h3 id="target-appointment">Book an appointment</h3>
 			<div class="content-appointment">
 				{{form_start(form)}}
-					<div class="alert alert-light">
+					<div  class="alert alert-light">
 						<h5 class="text-center">General informations</h5>
 						{{ form_widget(form.lastName|e) }}
 						{{ form_widget(form.firstName|e) }}
@@ -362,13 +315,13 @@
 						{{ form_widget(form.message|e) }}
 					</div>				
 				</div>
-				<a href="#target-flashMessage">
 				<button type="submit" class="btn btn-md">
 					<i class="fas fa-check"></i>
 					Submit
 				</button>
 				</a>
 				{{form_end(form)}} 
+				
 		</section>
 
 		<section id="gallery" class="gallery">
@@ -418,59 +371,6 @@
 			</div>
 		</section>
 
-		<footer id="target-contact" class="bloc-footer">
-			<div class="text-center">
-				<div class="memberships-footer"> 
-					<h6>Professional memberships</h6>
-						<p>The Royal College of Ophthalmologists, London</p>
-						<p>European Glaucoma Society</p>
-						<p>Scottish Ophthalmology Club</p>
-						<p>Egyptian Ophthalmology Society</p>
-						<p>British Medical Association</p> 
-				</div>
-				<div class="content-footer">
-					<div id="information-mr-radwan">
-						<p><i class="fas fa-mobile-alt"></i>+44.07576846127</p>
-						<p><i class="fas fa-at"></i>mamoudradwan@hotmail.com</p>
-					</div>
-					<a href="http://linkedin.com/in/mahmoud-radwan-729ab332" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-					<a href="https://youtube.com/channel/UCZag8er1bWjDucb89g78m1g" target="_blank"><i class="fab fa-youtube"></i></a>
-					<a href="mailto:mamoudradwan@hotmail.com"><i class="fas fa-envelope"></i></a>				
-				</div>
-					<div class="container" id="partners-logo">
-						<div class="row">
-							<div class="col">
-								<img src="/images/partners/partner-7.jpg" alt="logos of partners">
-								<img src="/images/partners/partner-1.jpg" alt="logos of partners">
-								<img src="/images/partners/partner-3.jpg" alt="logos of partners">
-								<img src="/images/partners/partner-4.jpg" alt="logos of partners">
-								<img src="/images/partners/partner-5.jpg" alt="logos of partners">
-								<img src="/images/partners/partner-2.jpg" alt="logos of partners">
-								<img src="/images/partners/partner-6.jpg" alt="logos of partners">
-							</div>
-						</div>
-					</div>
-					<div class="container" id="insurers">
-						<div class="row">
-							<div class="col">
-								<img src="/images/insurers/insurer-1.jpg" alt="logos of partners">
-								<img src="/images/insurers/insurer-2.jpg" alt="logos of partners">
-								<img src="/images/insurers/insurer-3.jpg" alt="logos of partners">
-								<img src="/images/insurers/insurer-4.jpg" alt="logos of partners">
-								<img src="/images/insurers/insurer-5.jpg" alt="logos of partners">
-								<img src="/images/insurers/insurer-6.jpg" alt="logos of partners">
-								<img src="/images/insurers/insurer-7.jpg" alt="logos of partners">
-								<img src="/images/insurers/insurer-8.jpg" alt="logos of partners">
-								<img src="/images/insurers/insurer-9.jpg" alt="logos of partners">
-							</div>
-						</div>
-					</div>
-					<div id="contact-webmaster">
-						<p>© Copyright 2020. All rights reserved.</p>
-						<a href="mailto:ethan.eldib@gmail.com"><small><i class="fas fa-envelope"> Contact webmaster</i></small></a>
-					</div>
-			</div>
-		</footer>
 	</div>
 
 {% endblock %}
