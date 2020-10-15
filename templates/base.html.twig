@@ -1,23 +1,31 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Doctor Radwan - {% block title %}{% endblock %}</title>
-        <meta name="viewport" content="width=device-width, user-scalable=no">
-        <script src="https://kit.fontawesome.com/f12ce41413.js" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
-        {% block stylesheets %}
-            {{ encore_entry_link_tags('app') }}
-        {% endblock %}
-    </head>
-    <body>
-        {% include "/partials/header.html.twig" %}
-        {% block body %}
-        {% endblock %}
-        {% include "/partials/footer.html.twig" %}
-        {% block javascripts %}
-            {{ encore_entry_script_tags('app') }}
-        {% endblock %}
-    </body>
+<html xmins:og="http://ogp.me/ns#">
+	<head>
+		<meta charset="UTF-8">
+		<title>Doctor Radwan -{% block title %}{% endblock %}</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<meta name="description" content="Doctor Mahmoud Radwan, Colchester-based Consultant eye surgeon">
+		<meta property="og:description" content="Dr Radwan Mahmoud, Colchester-based Consultant Eye Surgeon">
+        <meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Mr Radwan Mahmoud - Eye Specialist">
+		<meta property="og:title" content="Mr Radwan Mahmoud - Glaucoma and Cataract surgeon ">
+		<meta property="og:url" content="https://www.radwan-eyespecialist.com/">
+        <meta property="og:image" content="https://www.radwan-eyespecialist.com/uploads/2020/10/radwan-1.jpg">
+		<meta name="keywords" content="Dr Radwan Mahmoud, Mr Mahmoud Radwan, Radwan eye specialist, Ophtalmic surgeon, surgeon colchester, eye surgeon colchester, cataract surgery, laser eye surgery, glaucoma, cataract, eye, eye surgery, doctor, laser vision, united kingdom, Colchester, consultant, private, expert, Xen, istent, trabeculectomy, SLT, multifocal, Cypass, treatment">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<script src="https://kit.fontawesome.com/f12ce41413.js" crossorigin="anonymous"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+		{% block stylesheets %}
+			{{ encore_entry_link_tags('app') }}
+		{% endblock %}
+	</head>
+	<body>
+		{% include "/partials/header.html.twig" %}
+		{% block body %}{% endblock %}
+		{% include "/partials/footer.html.twig" %}
+		{% block javascripts %}
+			{{ encore_entry_script_tags('app') }}
+		{% endblock %}
+	</body>
 </html>

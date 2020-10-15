@@ -8,6 +8,17 @@ $env-width : 380px;
 $env-height : 280px;
 
 #thankyou-letter {
+
+    #logo-wax {
+        max-width: 90px;
+        max-height: 90px;
+        z-index: 999;
+        left: 38%;
+        bottom: 35%;
+        position: absolute;
+        box-shadow: none !important;
+    }
+
     h3 {
         text-align: center;
         text-decoration-color: $colorPrimary;
@@ -23,6 +34,7 @@ $env-height : 280px;
     img {
         max-width: 91px;
         max-height: 91px;
+        margin-top: 3px;
         margin-right: 10px;
         margin-bottom: 5px;
         box-shadow: 0px 0px 2px 0px black;
@@ -40,7 +52,7 @@ $env-height : 280px;
         border-bottom-right-radius: 6px;
         margin: 0 auto;
         top: 29px;
-        background-color: #00334c;
+        background-color: #bbbbbb;
     }
 
     .close-env .flap {
@@ -67,18 +79,19 @@ $env-height : 280px;
         border-left: ($env-width / 2) solid transparent;
         border-right: ($env-width / 2) solid transparent;
         border-bottom: ($env-height / 2) - 8 solid transparent;
-        border-top: ($env-height / 2) + 8 solid $color-flap;
+        border-top: ($env-height / 2) + 8 solid #bbbbbb;
         transform-origin: top;
         pointer-events: none;
+
     }
 
     .pocket {
-        border-left: ($env-width / 2) solid $color-env;
-        border-right: ($env-width / 2) solid $color-env;
-        border-bottom: ($env-height / 2) solid $color-env2;
+        border-left: ($env-width / 2) solid #d4d4d4;
+        border-right: ($env-width / 2) solid #d4d4d4;
+        border-bottom: ($env-height / 2) solid #d0d0d0;
         border-top: ($env-height / 2) solid transparent;
         border-bottom-left-radius: $env-border-radius;
-        border-bottom-right-radius: $env-border-radius;
+        border-bottom-right-radius: $env-border-radius;   
     }
 
     .letter {
