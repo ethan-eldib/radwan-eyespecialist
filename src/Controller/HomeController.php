@@ -26,7 +26,7 @@ class HomeController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $email->sendEmail($contact);
             
-            $this->addFlash('success', "Your email has been sent successfully");
+            $this->addFlash('success', "Email sent successfully");
             return $this->redirect($request->getUri());
         }
 

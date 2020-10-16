@@ -44,6 +44,7 @@ class AppointmentType extends ApplicationType
                     'choices' => [
                         'Cataract'  => 'Cataract',
                         'Glaucoma'  => 'Glaucoma',
+                        'Laser'  => 'Laser',
                         'Other'     => 'Other'
                     ]
             ])

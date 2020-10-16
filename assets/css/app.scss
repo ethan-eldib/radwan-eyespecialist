@@ -255,6 +255,12 @@
     background: #0267bc;
   }
 
+  @media screen and (max-width:850px) {
+    .w-100 {
+      width: 100% !important;
+      border-radius: 0%;
+    }
+  }
 
 }
 
@@ -902,7 +908,7 @@
   }
 }
 
-// Bouton scroll to the top
+// Button scroll to the top
 #scroll-to-top {
   text-decoration: none;
   display: inline-block;
