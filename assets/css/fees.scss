@@ -106,6 +106,10 @@
         .title-table {
             margin-top: 70px;
         }
+
+        hr {
+            margin-bottom: 0rem;
+        }
     }
 }
 
@@ -144,6 +148,18 @@
 
     .row {
         justify-content: space-between;
+    }
+
+    @media (max-width: 575px) {
+        img {
+            max-width: 50px;
+            max-height: 50px;
+        }
+
+        figure {
+            padding: 2px;
+            margin: 2px;
+        }
     }
 
 }
