@@ -3,6 +3,9 @@
 {% block title %}Page not found{% endblock %}
 
 {% block body %}
-    <h1>ERROR 404</h1>
-    <p>Page not found</p>
+    <div class="container bloc-404">
+        <h1 id="title-404">4<i class="fas fa-eye"></i>4</h1>
+        <p id="content-404">Page not found</p>
+        <a class="button" href="{{ path('homepage') }}"><i class="fas fa-house-user"></i> Back to the home page.</a>
+    </div>
 {% endblock %}
