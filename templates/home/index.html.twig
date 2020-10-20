@@ -13,7 +13,7 @@
 					<div class="carousel-caption  d-md-block">
 						<h5>Mr Mahmoud Radwan</h5>
 						<p>MB ChB (hons), FRCOphth, FEBOphth</p>
-						<p>Consultant Ophthalmologist, Glaucoma specialist and Cataract surgeon</p>
+						<p>Consultant Ophthalmologist, Glaucoma expert, Cataract and Laser surgeon</p>
 					</div>
 					<div class="carousel-item active">
 						<img class="d-block w-100" src="/images/slider/eye-slider.jpg" alt="First slide">
@@ -49,7 +49,7 @@
 		</section>
 	
 		<section class="eye-disease">
-			<hr>
+			<hr id="hr">
 			<h3 id="target-area-expertise">Area of expertise</h3>
 			<p id="subtitle-eye-disease">To learn more about glaucoma and cataract, click on one of the buttons below</p>
 			<div class="eye-disease-cataract">
@@ -198,7 +198,7 @@
 
 		<section id="awards" class="awards">
 			<div class="wrap">
-			<hr>
+			<hr id="hr">
 			<h3>Awards</h3>
 				<div class="card">
 					<div class="card-pic-wrap">
@@ -221,7 +221,7 @@
 
 		<section  class="publications">
 			<div class="wrap">
-			<hr>
+			<hr id="hr">
 			<h3 id="target-publications">Publications</h3>
 				<div class="card">
 					<div class="card-pic-wrap">
@@ -293,7 +293,7 @@
 		</section>
 
 		<section id="appointment" class="appointment">
-			<hr>
+			<hr id="hr">
 			<h3 id="target-appointment">Book an appointment</h3>
 			<div class="content-appointment">
 				{{form_start(form)}}
@@ -315,6 +315,7 @@
 						{{ form_widget(form.message|e) }}
 					</div>				
 				</div>
+				<input type="hidden" id="recaptchaResponse" name="recaptacha-response">
 				<button type="submit" class="btn btn-md">
 					<i class="fas fa-check"></i>
 					Submit
@@ -326,7 +327,7 @@
 
 		<section id="gallery" class="gallery">
 			<div class="container-fluid">
-				<hr>
+				<hr id="hr">
 				<h3>Gallery</h3>
 					<ul id="imageGallery">
 						<li>
@@ -350,8 +351,8 @@
 		</section>
 	
 		<section id="thankyou-letter">
-			<hr>
-			<h3 id="target-testimonials">Letter of thanks</h3>
+			<hr id="hr">
+			<h3 id="target-testimonials">Testimonials</h3>
 			<div class="envlope-wrapper">
 				<div id="envelope" class="close-env">
 					<div><img id="logo-wax" src="/images/letters/cire.png" alt="cire logo"></div>

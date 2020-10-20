@@ -45,6 +45,7 @@ class AppointmentType extends ApplicationType
                         'Cataract'  => 'Cataract',
                         'Glaucoma'  => 'Glaucoma',
                         'Laser'  => 'Laser',
+                        'General ophthalmology'  => 'General ophthalmology',
                         'Other'     => 'Other'
                     ]
             ])

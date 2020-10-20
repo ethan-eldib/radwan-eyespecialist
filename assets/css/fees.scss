@@ -19,11 +19,10 @@
         box-shadow: 0px 0px 5px 0px gray;
         padding: 30px 0;
         border-radius: 5px;
-        height: 43%;
     }
 
     .informations {
-        color: white;
+        color: black;
         margin-bottom: 15px;
         margin-top: 45px;
 
@@ -37,14 +36,6 @@
         }
     }
 
-    .location {
-        color: black;
-
-        & span:first-child {
-            text-decoration: underline;
-        }
-    }
-
 
     .title-table {
         font-size: 1.4rem;
@@ -52,7 +43,7 @@
     }
 
     .subtitle-table {
-        font-size: 1rem;
+        font-size: 0.9rem;
         margin-bottom: 25px;
     }
 
@@ -78,23 +69,23 @@
 
         &::before {
             content: "";
-            border-top: 20px solid #fff;
-            border-left: 20px solid transparent;
-            border-right: 20px solid transparent;
+            border-top: 10px solid #fff;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
             position: absolute;
             top: 0;
-            left: 46%;
+            left: 49%;
         }
     }
 
     .currency {
         color: white;
-        font-size: 1.5rem;
+        font-size: 0.9rem;
     }
 
     .value {
         color: white;
-        font-size: 2.5rem;
+        font-size: 1rem;
         ;
     }
 
