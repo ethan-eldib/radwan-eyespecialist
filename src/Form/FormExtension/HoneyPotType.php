@@ -40,7 +40,6 @@ class HoneyPotType extends AbstractType
                 'autocomplete' => 'off',
                 'tabindex' => '-1'
             ],
-            'data'   => 'fake data', // WARNING A SUPPRIMER
             'mapped' => false,
             'required' => false
         ];
