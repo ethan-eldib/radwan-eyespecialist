@@ -4,6 +4,7 @@ namespace App\Form;
 
 use App\Entity\Appointment;
 use App\Form\ApplicationType;
+use App\Form\FormExtension\HoneyPotType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
@@ -11,34 +12,57 @@ use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 
-class AppointmentType extends ApplicationType
+class AppointmentType extends HoneyPotType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
+        parent::buildForm($builder, $options);
         $builder
             ->add(
                 'firstName',
                 TextType::class,
-                $this->getConfiguration('First name', "Fisrt name")
+                [
+                    'label' => 'First name',
+                    'attr' => [
+                        'placeholder' => 'First name'
+                    ]
+                ]
+
             )
             ->add(
                 'lastName',
                 TextType::class,
-                $this->getConfiguration('Last name', "Last name")
+                [
+                    'label' => 'Last name',
+                    'attr' => [
+                        'placeholder' => 'Last name'
+                    ]
+                ]
             )
             ->add(
                 'email',
                 EmailType::class,
-                $this->getConfiguration('Email', "Email")
+                [
+                    'label' => 'Email',
+                    'attr' => [
+                        'placeholder' => 'Email'
+                    ]
+                ]
             )
             ->add(
                 'phone',
                 TextType::class,
-                $this->getConfiguration('Phone', "Phone number")
+                [
+                    'label' => 'Phone number',
+                    'attr' => [
+                        'placeholder' => 'Phone number'
+                    ]
+                ]
             )
             ->add(
                 'disease',
-                ChoiceType::class,[
+                ChoiceType::class,
+                [
                     'label' => "",
                     'placeholder' => "-- Select your choice --",
                     'choices' => [
@@ -48,23 +72,30 @@ class AppointmentType extends ApplicationType
                         'General ophthalmology'  => 'General ophthalmology',
                         'Other'     => 'Other'
                     ]
-            ])
+                ]
+            )
             ->add(
                 'methodContact',
-                ChoiceType::class,[
+                ChoiceType::class,
+                [
                     'label' => "",
                     'placeholder' => "-- Select your choice --",
                     'choices' => [
                         'Email'  => 'Email',
                         'Phone'  => 'Phone'
                     ]
-            ])
+                ]
+            )
             ->add(
                 'message',
                 TextareaType::class,
-                $this->getConfiguration('Your message', "Your message here")
-            )
-        ;
+                [
+                    'label' => 'Message',
+                    'attr' => [
+                        'placeholder' => 'Your message here...'
+                    ]
+                ]
+            );
     }
 
     public function configureOptions(OptionsResolver $resolver)

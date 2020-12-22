@@ -114,7 +114,7 @@ $env-height : 280px;
 
     .open .letter {
         text-align: center;
-        transform: translateY(-($env-height / 3));
+        transform: translateY(-115.33px);
         transition: transform .4s .6s ease, z-index .6s;
         z-index: 2;
     }

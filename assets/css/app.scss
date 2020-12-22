@@ -223,6 +223,10 @@
 
 .slider {
 
+  h5 {
+    font-size: 1.95rem;
+  }
+
   .w-100 {
     position: relative;
     bottom: -50px;
@@ -234,7 +238,8 @@
 
   .d-md-block {
     background: linear-gradient(to bottom, #0267bc, #53d6f7);
-    color: black;
+    color: white;
+    text-shadow: $textShadow;
 
     p {
       margin-bottom: 0;
