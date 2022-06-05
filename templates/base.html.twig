@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmins:og="http://ogp.me/ns#">
+	<head>
+		<meta charset="UTF-8">
+		<title>Doctor Radwan - {% block title %}{% endblock %}</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<meta name="description" content="Mr Radwan is a Cataract Specialist, Glaucoma expert and Laser surgeon based in Colchester, Essex with more than 15 years in ophthalmology and exceptional surgical outcomes. His NHS work based in Colchester and Clacton hospitals. He welcomed both insured and self-paying patients ">
+		<meta property="og:description" content="Dr Mahmoud Radwan, Colchester-based Consultant Eye Surgeon">
+		<meta property="og:type" content="website"/>
+		<meta property="og:site_name" content="Mr Mahmoud Radwan - Eye Specialist">
+		<meta property="og:title" content="Mr Mahmoud Radwan - Glaucoma and Cataract surgeon ">
+		<meta property="og:url" content="https://www.radwan-eyespecialist.com/">
+		<meta property="og:image" content="https://www.radwan-eyespecialist.com/uploads/2020/10/radwan-1.jpg">
+		<meta name="keywords" content="Mr Mahmoud Radwan, Radwan eye specialist, Ophthalmic surgeon, surgeon colchester, eye surgeon colchester, cataract surgery, Eye Surgery Laser, Cataract, Glaucoma, Eye Surgery Laser, Sight, Consultant Surgeon, Colchester, Essex ,London, Ipswich ,Phacoemulsification, lens, Multifocal, MIGS, Vision, Yag, Argon, Capsulotomy, Ophthalmologist, NHS, Private, Insurance, Glaucoma, surgery eye pressure,Minimally Invasive glaucoma, surgery Lens, exchange Primary, open angle iStent">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<script src="https://kit.fontawesome.com/f12ce41413.js" crossorigin="anonymous"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+		{% block stylesheets %}
+			{{ encore_entry_link_tags('app') }}
+		{% endblock %}
+	</head>
+	<body>
+		{% include "/partials/header.html.twig" %}
+		{% block body %}{% endblock %}
+		{% include "/partials/footer.html.twig" %}
+		{% block javascripts %}
+			{{ encore_entry_script_tags('app') }}
+		{% endblock %}
+		<script src="https://www.google.com/recaptcha/api.js?render=6LdEbdkZAAAAAGfb-P1XwYNFiJmCk3RbS3Z6PpDK"></script>
+		<script>
+			function onClick(e) {
+				e.preventDefault();
+				grecaptcha.ready(function() {
+					grecaptcha.execute('6LdEbdkZAAAAAGfb-P1XwYNFiJmCk3RbS3Z6PpDK', {action: 'submit'}).then(function(token) {
+						document.getElementById("recaptchaResponse").value = token
+					});
+				});
+			}
+		</script>
+	</body>
+</html>

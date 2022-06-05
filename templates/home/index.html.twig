@@ -1,0 +1,387 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ophthalmic surgeon{% endblock %}
+
+{% block body %}
+	<div class="bloc-page">
+		
+		<div id="scroll-to-top"><i class="fas fa-arrow-up"></i></div>
+		
+		<section id="slider" class="slider">
+			<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-caption  d-md-block">
+						<h5>Mr Mahmoud Radwan</h5>
+						<p>MB ChB (hons), FRCOphth, FEBOphth</p>
+						<p>Consultant Ophthalmologist, Glaucoma expert, Cataract and Laser surgeon</p>
+					</div>
+					<div class="carousel-item active">
+						<img class="d-block w-100" src="/images/slider/eye-slider.jpg" alt="First slide">
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" src="/images/gallery/radwan-9.jpg" alt="Second picture slide">
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" src="/images/slider/radwan-2.jpg" alt="Second slide">
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" src="/images/slider/radwan-3.jpg" alt="Third slide">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="about">
+			<div class="wrap">
+				<h3 id="target-about">About myself</h3>			
+				<div class="card">
+					<div class="card-pic-wrap">
+						<img src="/images/gallery/radwan-3.png" alt="Picture of Dr Radwan">
+						</div>
+						<div class="card-content">
+						<p>I work as a consultant ophthalmic surgeon and I have a special interest in management of glaucoma and complex cataract surgery. <br>
+							I graduated from South Valley University in 2002 and I did my higher specialist Ophthalmology training in Cardiff, Edinburgh and Cambridge university hospitals. <br>
+							I completed a Senior Glaucoma Fellowship in Glaucoma and Cataract surgeries from the prestigious Western Eye Hospital, London. <br>		
+							During my Advanced training in glaucoma, I had the opportunity to acquire extensive and comprehensive expertise in Glaucoma and complex and challenging cataract surgeries.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	
+		<section class="eye-disease">
+			<hr id="hr">
+			<h3 id="target-area-expertise">Area of expertise</h3>
+			<p id="subtitle-eye-disease">To learn more about glaucoma and cataract, click on one of the buttons below</p>
+			<div class="eye-disease-cataract">
+				<div class="wrapper">
+					<button class="modal-toggle-cataract modal-toggle">Cataract</button>
+				</div>
+
+				<div class="modal-disease-cataract">
+					<div class="modal-overlay modal-toggle-cataract"></div>
+					<div class="modal-wrapper modal-transition">
+						<div class="modal-header">
+							<a href="#" class="modal-close">X</a>
+						</div>
+
+					<div class="modal-body">
+						<div class="modal-content">
+							<p>
+								Cataract is a cloudy natural lens of the eye. The lens become cloudy instead of being crystal clear.
+								Cataracts block light, making it difficult to see clearly. Cataracts are very common as you get older often
+								develop slowly and can affect one or both eyes.
+								How will the cataract affect you?
+								When the cataracts develop, initially you will not feel any difference but over time, cataracts can make
+								your vision blurry, hazy, or less colourful. You may have trouble reading or doing other everyday
+								activities. Drivers will get glare as the cataracts grow.
+							</p>
+
+							<h5>Examples of cataract</h5>
+							<img src="/images/disease/cataract.jpg" id="cataract-image" alt="exemples of cataract">
+							<hr>
+							<h5>Causes of cataracts</h5>
+							<p>
+								Cataracts mainly occur as a you grow up. There are many other diseases that than cause the cataract to grow
+								faster or at a younger age for example Diabetes and inflammation of the middle and internal layers of the
+								eye, very rarely people are born with cataract.
+							</p>
+							<hr>
+							<h5>Other risk factors for developing cataract</h5>
+							<ul>
+								<li>Smoking</li>
+								<li>Drinking too much alcohol</li>
+								<li>Have a family history of cataracts</li>
+								<li>Have had an eye injury, eye surgery, or radiation treatment on your upper body</li>
+								<li>Have spent a lot of time in the sun</li>
+								<li>ake steroids (medicines used to treat a variety of health problems, like arthritis and rashes)</li>
+							</ul>
+							<hr>
+							<h5>Treatment</h5>
+							<p>
+								During the past decade cataract treatment evolved significantly from a very large incision to the use of
+								Femtolaser. That is performed under a topical anaesthesia with a very quick recovery time.
+								The human lens is then replaced with artificial lens. Cataract surgery can correct both near and distance
+								vision. They minimize or eliminate the need for reading glasses after surgery. Conventional "monofocal"
+								lenses only correct for distance vision, meaning reading glasses
+								are still needed after surgery. Multifocal IOLs (Intraocular Lens) can be an option in some patients to help
+								improve both distance and near vision. "Toric" implants are available to correct astigmatism.
+							</p>
+						</div>
+					</div>
+					<a href="#" class="modal-close modal-close-bottom">Close</a>	
+					</div>
+				</div>
+			</div>
+			<div class="eye-disease-glaucoma">
+				<div class="wrapper">
+					<button class="modal-toggle-glaucoma modal-toggle">Glaucoma</button>
+				</div>
+
+				<div class="modal-disease-glaucoma">
+					<div class="modal-overlay modal-toggle-glaucoma"></div>
+					<div class="modal-wrapper modal-transition">
+						<div class="modal-header">
+							<a href="#" class="modal-close">X</a>
+						</div>
+
+					<div class="modal-body">
+						<div class="modal-content">
+							<p>
+								Glaucoma is a complex disease in which damage to the optic nerve which connects the eye to the brain, leads to progressive, irreversible vision loss. Glaucoma is the second leading cause of blindness.
+								It usually happens when fluid builds up in the front part of your eye. That extra fluid increases the pressure in your eye, damaging the optic nerve.
+							</p>
+
+							<h5>Development of Glaucoma</h5>
+							<img src="/images/disease/glaucoma.png" id="glaucoma-image" alt="exemples of glaucoma">
+							<p>
+								There are many different types of glaucoma, but the most common type is called open-angle glaucoma — that’s what most people mean when they talk about glaucoma. Other types of glaucoma are less common, like angle-closure glaucoma and congenital glaucoma.
+							</p>
+							<hr>
+							<h5>Symptoms of Glaucoma</h5>
+							<p>
+								Glaucoma is a slowly developing disease and often doesn’t cause noticeable symptoms until damage has already occurred. Sometimes people experience acute glaucoma which causes a sudden onset of severe eye pain and blurred vision.
+							</p>
+							<hr>
+							<h5>When glaucoma does cause symptoms, these might include</h5>
+							<ul>
+								<li>Blurred and reduced vision starting with peripheral vision (outer edges) and develops very slowly. </li>
+								<li>Seeing rings and rainbow-coloured circles around bright lights.</li>
+								<li>Severe eye pain that comes on suddenly. This might be accompanied by redness and tenderness of the eye and surrounding area, plus a headache, nausea and vomiting. </li>
+							</ul>
+							<hr>
+							<h5>Treatment</h5>
+							<p>
+								Screening is a key point in diagnosing glaucoma early and we advise people who have a family history of glaucoma to have their eye checked annually as glaucoma runs in the families
+								Management of glaucoma is tailored according to each patient individually 
+							</p>
+							<p><strong>Medical Treatment:</strong> Mainly drops and rarely some forms of tablets</p>
+							<p><strong>Laser Treatment:</strong> According to the degree of your glaucoma your surgeon may use different types of Laser treatment such as SLT, MDLT, Yag iridotomy, Argon Iridoplasty or Cyclodiod Laser</p>
+							<p><strong>Minimally Invasive Glaucoma Surgeries MIGS:</strong> MIGS offer intraocular pressure lowering by targeting various aspects of normal aqueous dynamics.</p>
+							<p><strong>Medical Treatment:</strong> Mainly drops and rarely some forms of tablets</p>
+							<figure>
+								<img src="/images/disease/istent.png" alt="istent inject" />
+								<figcaption>iStent Inject</figcaption>
+							</figure>
+							<figure>
+								<img src="/images/disease/implant.png" alt="Xen implant" />
+								<figcaption>Xen implant</figcaption>
+							</figure>
+							<figure>
+								<img src="/images/disease/microshunt.png" alt="presserflo microshunt" />
+								<figcaption>Presserflo microshunt</figcaption>
+							</figure>
+							<p><strong>Trabeculectomy:</strong> This is where your eye surgeon creates a small and thin flap in the sclera. He will also create a bubble in the conjunctiva called a filtration bleb. It is usually hidden under the upper eyelid and cannot be seen. Aqueous humour will be able to drain out of the eye through the flap and into the bleb. In the bleb, the fluid is absorbed by tissue around your eye, lowering eye pressure.</p>
+							<p><strong>Glaucoma drainage devices:</strong> We implant a tiny drainage tube in your eye. The glaucoma drainage implant sends the fluid to a collection area (called a reservoir). Your eye surgeon creates this reservoir beneath the covering of the eye. The fluid is then absorbed into nearby blood vessels.</p>
+						</div>
+					</div>
+					<a href="#" class="modal-close modal-close-bottom">Close</a>	
+					</div>
+				</div>
+			</div>
+			<div class="wrapper">
+				<button class="modal-toggle">Laser Treatment</button>
+			</div>
+			<div class="wrapper">
+				<button class="modal-toggle">General Ophthalmology </button>
+			</div>
+		</section>
+
+		<section class="area-expertise">
+			<div class="wrap">
+				<div class="card">
+					<div class="card-pic-wrap">
+						<img src="/images/gallery/radwan-9.jpg" alt="Picture of Dr Radwan">
+						</div>
+						<div class="card-content">
+						<p>I ’m interested in management of all forms of glaucoma using different approaches that include medical and interventional techniques tailored to each patient. <br>
+						I perform different glaucoma surgeries including Augmented Trabeculectomy, Baerveldt and Ahmed drainage devices insertion, laser peripheral iridotomy (Yag PI), MIGS drainage surgery (minimally invasive glaucoma surgery), and selective laser trabeculoplasty (SLT). <br>
+						I also perform the MDLT (MicroPulse  Diode Laser Therapy) and ECP ( Endoscopic Cyclophoto-coagulation) Laser treatment for glaucoma. <br>
+						I’m also highly trained in complex cataract surgery and general eye conditions including eye emergencies.</p>				
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="awards" class="awards">
+			<div class="wrap">
+			<hr id="hr">
+			<h3>Awards</h3>
+				<div class="card">
+					<div class="card-pic-wrap">
+						<img src="/images/logo/awards.png" alt="awards logo">
+						</div>
+						<div class="card-content">
+						<p><i class="fas fa-award icone-award"></i>
+							Scottish ophthalmological club Prize Sterling 2016
+						</p>
+						<p><i class="fas fa-award icone-award"></i>
+							Laser Research Project Prize Cairo 2009
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section  class="publications">
+			<div class="wrap">
+			<hr id="hr">
+			<h3 id="target-publications">National and International Presentations</h3>
+				<div class="card">
+					<div class="card-pic-wrap">
+						<img src="/images/logo/publications.png" alt="publications logo">
+					</div>
+					<div class="card-content">
+						
+						<ul>
+							<li>
+								10 years follow up and outcomes of Basal cell carcinoma Small margin
+								excisional biopsy ESO 2017 Barcelona, Spain
+							</li>
+							<li>
+								Cataract surgery planning in amblyopic patients, ESO 2015 Vienna, Austria.
+							</li>
+							<li>
+								Prominent iris vascular tufts as a cause of recurrent spontaneous hyphema in
+								thyroid eye disease SOC 2014 Edinburgh, UK
+							</li>
+							<li>
+								Dysthyroid Optic neuropathy, Welsh ophthalmic forum 2012 Carmarthen UK.
+							</li>
+							<li>
+								Dacyrocystocele case presentation SWOPS 2012 Cardiff, UK.
+							</li>
+						</ul>
+
+						<ul>
+							<li>
+								18 months follow up and outcomes of XEN implant with and without cataract surgery, EGS Florence, 2018
+							</li>
+							<li>
+								Prominent iris vascular tufts as a cause of recurrent spontaneous hyphaema in thyroid eye disease. Presented at the ESO 2015 Vienna, Austria
+							</li>
+							<li>
+								Long-term outcomes of Phaco-Trabeculectmoy surgery with antimetabolite use.
+								Glaucoma world congress Paris, France 2011
+							</li>
+						</ul>
+						<h4 class="text-center mb-3 mt-3"><u>Publications</u></h4>
+						<ul>
+							<li>
+								A multi-centre interventional case series of 259 ab-interno Xen gel implants for
+								glaucoma, with and without combined cataract surgery. Eye. Epub 24 October 2018.
+							</li>
+							<li>
+								A multi-centre interventional case series of 259 ab-interno Xen gel
+								implants for glaucoma, with and without combined cataract surgery. Eye
+								(Lond). 2018 Oct 24. doi: 10.1038/s41433-018-0243-8
+							</li>
+							<li>
+								Hyperviscosity Syndrome: Waldenstrom’s macroglobulinaemia presenting
+								as bilateral central retinal vein occlusion, RETINA. 38(1):203-206, January
+								2018
+							</li>
+							<li>
+								The Short to Medium-Term Risks of Intracameral Phenylephrine published
+								in Middle East African Journal of Ophthalmology, Volume 19, Number 4,
+								October - December 2012 page 357.
+							</li>
+							<li>
+								An Ethical Dilemma in Ophthalmology, Understanding the Patient’s
+								Agenda published in the foundation years’ journal
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="appointment" class="appointment">
+			<hr id="hr">
+			<h3 id="target-appointment">Book an appointment</h3>
+			<div class="content-appointment">
+				{{form_start(form)}}
+					<div  class="alert alert-light">
+						<h5 class="text-center">General informations</h5>
+						{{ form_widget(form.lastName|e) }}
+						{{ form_widget(form.firstName|e) }}
+						{{ form_widget(form.phone|e) }}
+						{{ form_widget(form.email|e) }}
+					</div>
+					<div class="alert alert-light">
+						<h5 class="text-center">Reason for appointment</h5>	
+						{{ form_widget(form.disease|e) }}
+						<h5 id="title-contact-method" class="text-center">Preferred contact method</h5>
+						{{ form_widget(form.methodContact|e) }}
+					</div>
+					<div class="alert alert-light">
+						<h5 class="text-center">Message</h5>
+						{{ form_widget(form.message|e) }}
+					</div>				
+				</div>
+				<input type="hidden" id="recaptchaResponse" name="recaptcha-response">
+				<button type="submit" class="btn btn-md">
+					<i class="fas fa-check"></i>
+					Submit
+				</button>
+				</a>
+				{{form_end(form)}} 
+				
+		</section>
+
+		<section id="gallery" class="gallery">
+			<div class="container-fluid">
+				<hr id="hr">
+				<h3>Gallery</h3>
+					<ul id="imageGallery">
+						<li>
+							<a href="/images/gallery/radwan-2.jpg" class="open-lightbox"><img src="/images/gallery/radwan-2.jpg"></a>
+						</li>
+						<li>
+							<a href="/images/gallery/radwan-4.jpg" class="open-lightbox"><img src="/images/gallery/radwan-4.jpg"></a>
+						</li>
+				
+						<li>
+							<a href="/images/gallery/radwan-6.jpg" class="open-lightbox"><img src="/images/gallery/radwan-6.jpg"></a>
+						</li>
+						<li>
+							<a href="/images/gallery/radwan-8.jpg" class="open-lightbox"><img src="/images/gallery/radwan-8.jpg"></a>
+						</li>
+						<li>
+							<a href="/images/gallery/radwan-9.jpg" class="open-lightbox"><img src="/images/gallery/radwan-9.jpg"></a>
+						</li>
+						<li>
+							<a href="/images/gallery/radwan-10.jpg" class="open-lightbox"><img src="/images/gallery/radwan-10.jpg"></a>
+						</li>
+					</ul>
+				</div>
+		</section>
+	
+		<section id="thankyou-letter">
+			<hr id="hr">
+			<h3 id="target-testimonials">Testimonials</h3>
+			<div class="envlope-wrapper">
+				<div id="envelope" class="close-env">
+					<div><img id="logo-wax" src="/images/letters/cire.png" alt="cire logo"></div>
+					<div class="front flap"></div>
+					<div class="front pocket"></div>
+					<div class="letter">
+						<a href="/images/letters/thanks-letter-1.jpg" class="open-lightbox"><img src="/images/letters/thanks-letter-1.jpg" alt="Letter"></a>
+						<a href="/images/letters/thanks-letter-2.jpg" class="open-lightbox"><img src="/images/letters/thanks-letter-2.jpg" alt="Letter"></a>
+						<a href="/images/letters/thanks-letter-3.jpg" class="open-lightbox"><img src="/images/letters/thanks-letter-3.jpg" alt="Letter"></a>
+						<a href="/images/letters/thanks-letter-4.jpg" class="open-lightbox"><img src="/images/letters/thanks-letter-4.jpg" alt="Letter"></a>
+						<a href="/images/letters/thanks-letter-5.png" class="open-lightbox"><img src="/images/letters/thanks-letter-5.png" alt="Letter"></a>
+						<a href="/images/letters/thanks-letter-6.jpg" class="open-lightbox"><img src="/images/letters/thanks-letter-6.jpg" alt="Letter"></a>
+						<a href="/images/letters/thanks-letter-7.jpg" class="open-lightbox"><img src="/images/letters/thanks-letter-7.jpg" alt="Letter"></a><br>
+						<small class="badge">Click on one of the letters to enlarge it</small>
+					</div>
+				</div>
+				<div class="reset">
+					<button id="open-env">Open the letter</button>
+					<button id="reset-env">Close the letter</button>
+				</div>
+			</div>
+		</section>
+
+	</div>
+
+{% endblock %}
