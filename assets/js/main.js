@@ -76,6 +76,19 @@ $('.js-anchor-link').click(function (e) {
     }
 });
 
+function scrollToTargetAnchor (anchorName) {
+    $("#js-anchor-link-" + anchorName).click(function () {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $("#target-" + anchorName).offset().top
+        }, 850)
+    })
+}
+scrollToTargetAnchor('publications');
+scrollToTargetAnchor('appointment');
+scrollToTargetAnchor('about');
+scrollToTargetAnchor('area-expertise');
+scrollToTargetAnchor('testimonials');
+
 // Envelope animation
 $(function () {
     let envelope = $('#envelope');

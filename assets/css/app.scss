@@ -61,7 +61,6 @@
     border-radius: 0.25rem;
 
 
-
     .close {
       cursor: pointer;
       float: none;
@@ -108,8 +107,7 @@
     right: 0;
     left: 0;
     z-index: 1030;
-    background: linear-gradient(to top, #0267bc, #53d6f7);
-    ;
+    background: linear-gradient(to top, #0267bc, #53d6f7);;
   }
 
   #logo {
@@ -261,7 +259,7 @@
     background: #0267bc;
   }
 
-  @media screen and (max-width:850px) {
+  @media screen and (max-width: 850px) {
     .w-100 {
       width: 100% !important;
       border-radius: 0%;
@@ -717,7 +715,17 @@
     }
   }
 
-
+  #appointment_landLinePhone,
+  #appointment_company,
+  label {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+    z-index: -1;
+  }
 }
 
 .gallery {

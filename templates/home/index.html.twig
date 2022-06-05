@@ -4,9 +4,9 @@
 
 {% block body %}
 	<div class="bloc-page">
-		
+
 		<div id="scroll-to-top"><i class="fas fa-arrow-up"></i></div>
-		
+
 		<section id="slider" class="slider">
 			<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
 				<div class="carousel-inner">
@@ -33,7 +33,7 @@
 
 		<section class="about">
 			<div class="wrap">
-				<h3 id="target-about">About myself</h3>			
+				<h3 id="target-about">About myself</h3>
 				<div class="card">
 					<div class="card-pic-wrap">
 						<img src="/images/gallery/radwan-3.png" alt="Picture of Dr Radwan">
@@ -41,13 +41,13 @@
 						<div class="card-content">
 						<p>I work as a consultant ophthalmic surgeon and I have a special interest in management of glaucoma and complex cataract surgery. <br>
 							I graduated from South Valley University in 2002 and I did my higher specialist Ophthalmology training in Cardiff, Edinburgh and Cambridge university hospitals. <br>
-							I completed a Senior Glaucoma Fellowship in Glaucoma and Cataract surgeries from the prestigious Western Eye Hospital, London. <br>		
+							I completed a Senior Glaucoma Fellowship in Glaucoma and Cataract surgeries from the prestigious Western Eye Hospital, London. <br>
 							During my Advanced training in glaucoma, I had the opportunity to acquire extensive and comprehensive expertise in Glaucoma and complex and challenging cataract surgeries.</p>
 					</div>
 				</div>
 			</div>
 		</section>
-	
+
 		<section class="eye-disease">
 			<hr id="hr">
 			<h3 id="target-area-expertise">Area of expertise</h3>
@@ -108,7 +108,7 @@
 							</p>
 						</div>
 					</div>
-					<a href="#" class="modal-close modal-close-bottom">Close</a>	
+					<a href="#" class="modal-close modal-close-bottom">Close</a>
 					</div>
 				</div>
 			</div>
@@ -152,7 +152,7 @@
 							<h5>Treatment</h5>
 							<p>
 								Screening is a key point in diagnosing glaucoma early and we advise people who have a family history of glaucoma to have their eye checked annually as glaucoma runs in the families
-								Management of glaucoma is tailored according to each patient individually 
+								Management of glaucoma is tailored according to each patient individually
 							</p>
 							<p><strong>Medical Treatment:</strong> Mainly drops and rarely some forms of tablets</p>
 							<p><strong>Laser Treatment:</strong> According to the degree of your glaucoma your surgeon may use different types of Laser treatment such as SLT, MDLT, Yag iridotomy, Argon Iridoplasty or Cyclodiod Laser</p>
@@ -174,7 +174,7 @@
 							<p><strong>Glaucoma drainage devices:</strong> We implant a tiny drainage tube in your eye. The glaucoma drainage implant sends the fluid to a collection area (called a reservoir). Your eye surgeon creates this reservoir beneath the covering of the eye. The fluid is then absorbed into nearby blood vessels.</p>
 						</div>
 					</div>
-					<a href="#" class="modal-close modal-close-bottom">Close</a>	
+					<a href="#" class="modal-close modal-close-bottom">Close</a>
 					</div>
 				</div>
 			</div>
@@ -196,7 +196,7 @@
 						<p>I ’m interested in management of all forms of glaucoma using different approaches that include medical and interventional techniques tailored to each patient. <br>
 						I perform different glaucoma surgeries including Augmented Trabeculectomy, Baerveldt and Ahmed drainage devices insertion, laser peripheral iridotomy (Yag PI), MIGS drainage surgery (minimally invasive glaucoma surgery), and selective laser trabeculoplasty (SLT). <br>
 						I also perform the MDLT (MicroPulse  Diode Laser Therapy) and ECP ( Endoscopic Cyclophoto-coagulation) Laser treatment for glaucoma. <br>
-						I’m also highly trained in complex cataract surgery and general eye conditions including eye emergencies.</p>				
+						I’m also highly trained in complex cataract surgery and general eye conditions including eye emergencies.</p>
 					</div>
 				</div>
 			</div>
@@ -231,7 +231,7 @@
 						<img src="/images/logo/publications.png" alt="publications logo">
 					</div>
 					<div class="card-content">
-						
+
 						<ul>
 							<li>
 								10 years follow up and outcomes of Basal cell carcinoma Small margin
@@ -299,7 +299,7 @@
 			<hr id="hr">
 			<h3 id="target-appointment">Book an appointment</h3>
 			<div class="content-appointment">
-				{{form_start(form)}}
+			{{form_start(form)}}
 					<div  class="alert alert-light">
 						<h5 class="text-center">General informations</h5>
 						{{ form_widget(form.lastName|e) }}
@@ -308,7 +308,7 @@
 						{{ form_widget(form.email|e) }}
 					</div>
 					<div class="alert alert-light">
-						<h5 class="text-center">Reason for appointment</h5>	
+						<h5 class="text-center">Reason for appointment</h5>
 						{{ form_widget(form.disease|e) }}
 						<h5 id="title-contact-method" class="text-center">Preferred contact method</h5>
 						{{ form_widget(form.methodContact|e) }}
@@ -316,16 +316,14 @@
 					<div class="alert alert-light">
 						<h5 class="text-center">Message</h5>
 						{{ form_widget(form.message|e) }}
-					</div>				
-				</div>
+					</div>
 				<input type="hidden" id="recaptchaResponse" name="recaptcha-response">
-				<button type="submit" class="btn btn-md">
-					<i class="fas fa-check"></i>
-					Submit
-				</button>
-				</a>
-				{{form_end(form)}} 
-				
+			</div>
+			<button type="submit" class="btn btn-md">
+				<i class="fas fa-check"></i>
+				Submit
+			</button>
+			{{form_end(form)}}
 		</section>
 
 		<section id="gallery" class="gallery">
@@ -339,7 +337,7 @@
 						<li>
 							<a href="/images/gallery/radwan-4.jpg" class="open-lightbox"><img src="/images/gallery/radwan-4.jpg"></a>
 						</li>
-				
+
 						<li>
 							<a href="/images/gallery/radwan-6.jpg" class="open-lightbox"><img src="/images/gallery/radwan-6.jpg"></a>
 						</li>
@@ -355,7 +353,7 @@
 					</ul>
 				</div>
 		</section>
-	
+
 		<section id="thankyou-letter">
 			<hr id="hr">
 			<h3 id="target-testimonials">Testimonials</h3>
