@@ -1,1 +1,0 @@
-[09-Sep-2020 05:46:57 America/Boise] PHP Fatal error:  Out of memory (allocated 809508864) (tried to allocate 4096 bytes) in phar:///home2/radwaney/composer.phar/src/Composer/DependencyResolver/Solver.php on line 223

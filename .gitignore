@@ -10,6 +10,7 @@
 /var/
 /vendor/
 /.well-known
+/.idea
 ###< symfony/framework-bundle ###
 
 ###> symfony/phpunit-bridge ###
