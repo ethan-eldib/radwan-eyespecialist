@@ -11,6 +11,7 @@
 /vendor/
 /.well-known
 /.idea
+.DS_Store
 ###< symfony/framework-bundle ###
 
 ###> symfony/phpunit-bridge ###

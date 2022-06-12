@@ -1398,6 +1398,7 @@
                 "reflection",
                 "static"
             ],
+            "abandoned": "roave/better-reflection",
             "time": "2020-03-27T11:06:43+00:00"
         },
         {
@@ -3845,16 +3846,16 @@
         },
         {
             "name": "symfony/google-mailer",
-            "version": "v5.1.6",
+            "version": "v5.1.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/google-mailer.git",
-                "reference": "361611404c036c6347329e996a289374c3148499"
+                "reference": "e93f9d09b1cf02ce74d65c08c2ddda33a0b284ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/google-mailer/zipball/361611404c036c6347329e996a289374c3148499",
-                "reference": "361611404c036c6347329e996a289374c3148499",
+                "url": "https://api.github.com/repos/symfony/google-mailer/zipball/e93f9d09b1cf02ce74d65c08c2ddda33a0b284ef",
+                "reference": "e93f9d09b1cf02ce74d65c08c2ddda33a0b284ef",
                 "shasum": ""
             },
             "require": {
@@ -3865,11 +3866,6 @@
                 "symfony/http-client": "^4.4|^5.0"
             },
             "type": "symfony-bridge",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "5.1-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Symfony\\Component\\Mailer\\Bridge\\Google\\": ""
@@ -3908,7 +3904,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-05-20T17:43:50+00:00"
+            "time": "2021-01-01T09:25:51+00:00"
         },
         {
             "name": "symfony/http-client",
@@ -7491,12 +7487,12 @@
             "version": "1.9.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/webmozart/assert.git",
+                "url": "https://github.com/webmozarts/assert.git",
                 "reference": "bafc69caeb4d49c39fd0779086c03a3738cbb389"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/bafc69caeb4d49c39fd0779086c03a3738cbb389",
+                "url": "https://api.github.com/repos/webmozarts/assert/zipball/bafc69caeb4d49c39fd0779086c03a3738cbb389",
                 "reference": "bafc69caeb4d49c39fd0779086c03a3738cbb389",
                 "shasum": ""
             },

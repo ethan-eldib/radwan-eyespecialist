@@ -5,6 +5,7 @@ namespace App\Form;
 use App\Entity\Appointment;
 use App\Form\FormExtension\HoneyPotType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
+use Symfony\Component\Form\Extension\Core\Type\HiddenType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
@@ -93,6 +94,13 @@ class AppointmentType extends HoneyPotType
                     'attr' => [
                         'placeholder' => 'Your message here...'
                     ]
+                ]
+            )
+            ->add(
+                'recaptchaResponse',
+                HiddenType::class,
+                [
+                    'mapped' => false,
                 ]
             );
     }

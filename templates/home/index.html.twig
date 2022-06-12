@@ -300,24 +300,24 @@
 			<h3 id="target-appointment">Book an appointment</h3>
 			<div class="content-appointment">
 			{{form_start(form)}}
-					<div  class="alert alert-light">
-						<h5 class="text-center">General informations</h5>
-						{{ form_widget(form.lastName|e) }}
-						{{ form_widget(form.firstName|e) }}
-						{{ form_widget(form.phone|e) }}
-						{{ form_widget(form.email|e) }}
-					</div>
-					<div class="alert alert-light">
-						<h5 class="text-center">Reason for appointment</h5>
-						{{ form_widget(form.disease|e) }}
-						<h5 id="title-contact-method" class="text-center">Preferred contact method</h5>
-						{{ form_widget(form.methodContact|e) }}
-					</div>
-					<div class="alert alert-light">
-						<h5 class="text-center">Message</h5>
-						{{ form_widget(form.message|e) }}
-					</div>
-				<input type="hidden" id="recaptchaResponse" name="recaptcha-response">
+				<div  class="alert alert-light">
+					<h5 class="text-center">General informations</h5>
+					{{ form_widget(form.lastName|e) }}
+					{{ form_widget(form.firstName|e) }}
+					{{ form_widget(form.phone|e) }}
+					{{ form_widget(form.email|e) }}
+				</div>
+				<div class="alert alert-light">
+					<h5 class="text-center">Reason for appointment</h5>
+					{{ form_widget(form.disease|e) }}
+					<h5 id="title-contact-method" class="text-center">Preferred contact method</h5>
+					{{ form_widget(form.methodContact|e) }}
+				</div>
+				<div class="alert alert-light">
+					<h5 class="text-center">Message</h5>
+					{{ form_widget(form.message|e) }}
+				</div>
+				{{ form_widget(form.recaptchaResponse) }}
 			</div>
 			<button type="submit" class="btn btn-md">
 				<i class="fas fa-check"></i>
