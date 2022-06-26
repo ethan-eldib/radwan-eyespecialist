@@ -643,7 +643,20 @@ font-weight: 700;
 
 #tarteaucitronAlertBig #tarteaucitronPrivacyUrl,
 #tarteaucitronAlertBig #tarteaucitronPrivacyUrlDialog {
-cursor: pointer;
+    background: #024c8a;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 16px!important;
+    line-height: 1.2;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-left: 7px;
+}
+
+#tarteaucitronPrivacyUrl:before {
+    content: "🛡️"
 }
 
 #tarteaucitronAlertBig #tarteaucitronCloseAlert,
