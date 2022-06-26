@@ -32,8 +32,8 @@ $env-height : 280px;
     }
 
     img {
-        max-width: 91px;
-        max-height: 91px;
+        max-width: 50px;
+        max-height: 50px;
         margin-top: 3px;
         margin-right: 10px;
         margin-bottom: 5px;
@@ -91,7 +91,7 @@ $env-height : 280px;
         border-bottom: ($env-height / 2) solid #d0d0d0;
         border-top: ($env-height / 2) solid transparent;
         border-bottom-left-radius: $env-border-radius;
-        border-bottom-right-radius: $env-border-radius;   
+        border-bottom-right-radius: $env-border-radius;
     }
 
     .letter {
