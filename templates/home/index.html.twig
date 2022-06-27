@@ -310,11 +310,15 @@
 			<h3 id="target-appointment">Book an appointment</h3>
 			<div class="content-appointment">
 			{{form_start(form)}}
-				<div  class="alert alert-light">
+				<div class="alert alert-light">
 					<h5 class="text-center">General informations</h5>
+					{{ form_errors(form.lastName) }}
 					{{ form_widget(form.lastName|e) }}
+					{{ form_errors(form.firstName) }}
 					{{ form_widget(form.firstName|e) }}
+					{{ form_errors(form.phone) }}
 					{{ form_widget(form.phone|e) }}
+					{{ form_errors(form.email) }}
 					{{ form_widget(form.email|e) }}
 				</div>
 				<div class="alert alert-light">
@@ -325,6 +329,7 @@
 				</div>
 				<div class="alert alert-light">
 					<h5 class="text-center">Message</h5>
+					{{ form_errors(form.message) }}
 					{{ form_widget(form.message|e) }}
 				</div>
 				{{ form_widget(form.recaptchaResponse) }}

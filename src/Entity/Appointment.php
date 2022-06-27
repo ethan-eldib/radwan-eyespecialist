@@ -11,51 +11,49 @@ class Appointment
      * @Assert\NotBlank(message="Thanks to indicate your first name")
      * @Assert\Length(min=2, max=100)
      */
-    private $firstName;
+    private string $firstName;
 
     /**
      * @var string
      * @Assert\NotBlank()
      * @Assert\Length(min=2, max=100)
      */
-    private $lastName;
+    private string $lastName;
 
     /**
      * @var string
      * @Assert\NotBlank()
      * @Assert\Email()
      */
-    private $email;
+    private string $email;
 
     /**
      * @var string
      * @Assert\NotBlank()
      */
-    private $phone;
+    private string $phone;
 
      /**
      * @var string
      * @Assert\NotBlank()
      */
-    private $disease;
+    private string $disease;
 
      /**
      * @var string
      * @Assert\NotBlank()
      */
-    private $methodContact;
+    private string $methodContact;
 
      /**
      * @var string
      * @Assert\NotBlank()
      * @Assert\Length(
      *  min=10,
-     *  max=255,
      *  minMessage = "Your message must contain at least 10 characters",
-     *  maxMessage = "Your message must contain less than 255 characters"
      * )
      */
-    private $message;
+    private string $message;
 
     public function getFirstName(): ?string
     {
@@ -133,8 +131,8 @@ class Appointment
      * Get the value of methodContact
      *
      * @return  string
-     */ 
-    public function getMethodContact()
+     */
+    public function getMethodContact(): string
     {
         return $this->methodContact;
     }
@@ -145,7 +143,7 @@ class Appointment
      * @param  string  $methodContact
      *
      * @return  self
-     */ 
+     */
     public function setMethodContact(string $methodContact)
     {
         $this->methodContact = $methodContact;

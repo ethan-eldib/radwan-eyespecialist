@@ -128,3 +128,9 @@ $(function () {
         })
     }
 });
+
+let delay = 0;
+let offset = 150;
+if ($(document).find("span").hasClass('form-error-message')) {
+    $('html, body').animate({scrollTop: $(".form-error-message").first().offset().top - offset }, delay);
+}

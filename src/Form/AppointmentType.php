@@ -22,10 +22,10 @@ class AppointmentType extends HoneyPotType
                 'firstName',
                 TextType::class,
                 [
-                    'label' => 'First name',
-                    'attr' => [
-                        'placeholder' => 'First name'
-                    ]
+                    'label'    => 'First name',
+                    'attr'     => [
+                        'placeholder' => 'First name (required)',
+                    ],
                 ]
 
             )
@@ -34,9 +34,9 @@ class AppointmentType extends HoneyPotType
                 TextType::class,
                 [
                     'label' => 'Last name',
-                    'attr' => [
-                        'placeholder' => 'Last name'
-                    ]
+                    'attr'  => [
+                        'placeholder' => 'Last name (required)',
+                    ],
                 ]
             )
             ->add(
@@ -44,9 +44,9 @@ class AppointmentType extends HoneyPotType
                 EmailType::class,
                 [
                     'label' => 'Email',
-                    'attr' => [
-                        'placeholder' => 'Email'
-                    ]
+                    'attr'  => [
+                        'placeholder' => 'Email (required)',
+                    ],
                 ]
             )
             ->add(
@@ -54,36 +54,36 @@ class AppointmentType extends HoneyPotType
                 TextType::class,
                 [
                     'label' => 'Phone number',
-                    'attr' => [
-                        'placeholder' => 'Phone number'
-                    ]
+                    'attr'  => [
+                        'placeholder' => 'Phone number (required)',
+                    ],
                 ]
             )
             ->add(
                 'disease',
                 ChoiceType::class,
                 [
-                    'label' => "",
-                    'placeholder' => "-- Select your choice --",
-                    'choices' => [
-                        'Cataract'  => 'Cataract',
-                        'Glaucoma'  => 'Glaucoma',
-                        'Laser'  => 'Laser',
-                        'General ophthalmology'  => 'General ophthalmology',
-                        'Other'     => 'Other'
-                    ]
+                    'label'       => "",
+                    'placeholder' => "Select your choice (required)",
+                    'choices'     => [
+                        'Cataract'              => 'Cataract',
+                        'Glaucoma'              => 'Glaucoma',
+                        'Laser'                 => 'Laser',
+                        'General ophthalmology' => 'General ophthalmology',
+                        'Other'                 => 'Other',
+                    ],
                 ]
             )
             ->add(
                 'methodContact',
                 ChoiceType::class,
                 [
-                    'label' => "",
-                    'placeholder' => "-- Select your choice --",
-                    'choices' => [
-                        'Email'  => 'Email',
-                        'Phone'  => 'Phone'
-                    ]
+                    'label'       => "",
+                    'placeholder' => "Select your choice (required)",
+                    'choices'     => [
+                        'Email' => 'Email',
+                        'Phone' => 'Phone',
+                    ],
                 ]
             )
             ->add(
@@ -91,9 +91,9 @@ class AppointmentType extends HoneyPotType
                 TextareaType::class,
                 [
                     'label' => 'Message',
-                    'attr' => [
-                        'placeholder' => 'Your message here...'
-                    ]
+                    'attr'  => [
+                        'placeholder' => 'Please detail your request (required)',
+                    ],
                 ]
             )
             ->add(

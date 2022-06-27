@@ -37,13 +37,20 @@ class HomeController extends AbstractController
                 $response = file_get_contents($url);
             }
 
-            if (empty($response) || is_null($response)) {
+            if (empty($response)) {
+                $this->addFlash(
+                    'danger',
+                    "An error has occurred, please submit the form again."
+                );
                 return $this->redirect($request->getUri());
             } else {
                 $data = json_decode($response);
                 if ($data->success) {
                     $email->sendEmail($contact);
-                    $this->addFlash('success', "Email sent successfully");
+                    $this->addFlash(
+                        'success',
+                        "Your appointment request has been sent successfully."
+                    );
                     return $this->redirect($request->getUri());
                 }
             }
