@@ -74,10 +74,12 @@ $('.js-anchor-link').click(function (e) {
             scrollTop: scrollTo + 'px'
         }, 850);
     }
+    $(document).find('.navbar-collapse').removeClass('show');
 });
 
 function scrollToTargetAnchor (anchorName) {
     $("#js-anchor-link-" + anchorName).click(function () {
+        $(document).find('.navbar-collapse').removeClass('show');
         $([document.documentElement, document.body]).animate({
             scrollTop: $("#target-" + anchorName).offset().top
         }, 850)

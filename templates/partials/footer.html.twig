@@ -13,35 +13,27 @@
                 <p><i class="fas fa-mobile-alt"></i>+44.07576846127</p>
                 <p><i class="fas fa-at"></i>contact@colchestereyedoctor.com</p>
             </div>
-            <a href="http://linkedin.com/in/mahmoud-radwan-729ab332" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://linkedin.com/in/mahmoud-radwan-729ab332" target="_blank"><i class="fab fa-linkedin-in"></i></a>
             <a href="https://youtube.com/channel/UCZag8er1bWjDucb89g78m1g" target="_blank"><i class="fab fa-youtube"></i></a>
             <a href="mailto:contact@colchestereyedoctor.com"><i class="fas fa-envelope"></i></a>
         </div>
             <div class="container" id="partners-logo">
                 <div class="row">
                     <div class="col">
-                        <img src="/images/partners/partner-7.jpg" alt="logos of partners">
-                        <img src="/images/partners/partner-1.jpg" alt="logos of partners">
-                        <img src="/images/partners/partner-3.jpg" alt="logos of partners">
-                        <img src="/images/partners/partner-4.jpg" alt="logos of partners">
-                        <img src="/images/partners/partner-5.jpg" alt="logos of partners">
-                        <img src="/images/partners/partner-2.jpg" alt="logos of partners">
-                        <img src="/images/partners/partner-6.jpg" alt="logos of partners">
+                        {% for i in 1..7 %}
+                            <img src="{{ asset('images/partners/partner-' ~ i ~ '.jpg') }}"
+                                 alt="logo partner number {{ i }}">
+                        {% endfor %}
                     </div>
                 </div>
             </div>
             <div class="container" id="insurers">
                 <div class="row">
                     <div class="col">
-                        <img src="/images/insurers/insurer-1.jpg" alt="logos of partners">
-                        <img src="/images/insurers/insurer-2.jpg" alt="logos of partners">
-                        <img src="/images/insurers/insurer-3.jpg" alt="logos of partners">
-                        <img src="/images/insurers/insurer-4.jpg" alt="logos of partners">
-                        <img src="/images/insurers/insurer-5.jpg" alt="logos of partners">
-                        <img src="/images/insurers/insurer-6.jpg" alt="logos of partners">
-                        <img src="/images/insurers/insurer-7.jpg" alt="logos of partners">
-                        <img src="/images/insurers/insurer-8.jpg" alt="logos of partners">
-                        <img src="/images/insurers/insurer-9.jpg" alt="logos of partners">
+                        {% for i in 1..9 %}
+                            <img src="{{ asset('images/insurers/insurer-' ~ i ~ '.jpg') }}"
+                                 alt="logo insurer number {{ i }}">
+                        {% endfor %}
                     </div>
                 </div>
             </div>

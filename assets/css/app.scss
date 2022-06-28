@@ -9,6 +9,15 @@ html {
   overflow-x: hidden;
 }
 
+body {
+  @media (max-width: 1200px) {
+    #tarteaucitronRoot #tarteaucitronAlertBig {
+      background-position-y: bottom;
+      background-size: 78px 78px;
+    }
+  }
+}
+
 .bloc-page {
 
   h1,
@@ -35,7 +44,6 @@ html {
   }
 
   @media (min-width: 790px) {
-
     .area-expertise,
     .about,
     .awards,
@@ -44,12 +52,10 @@ html {
       margin: 0 auto;
     }
   }
-
 }
 
 .header {
   transition: all 0.35s;
-
 
   .alert-success {
     color: #ffffff;
@@ -85,6 +91,10 @@ html {
     }
   }
 
+  .navbar-toggler {
+    font-size: 1.85rem;
+  }
+
   .navbar-toggler-icon {
     outline-color: white;
   }
@@ -100,7 +110,7 @@ html {
   }
 
   .navbar {
-    justify-content: start;
+    justify-content: space-between;
     padding: 0rem 0rem;
   }
 
@@ -187,8 +197,6 @@ html {
       max-height: 75px;
       transition: 0.35s ease;
     }
-
-
   }
 
   @media (min-width: 790px) {
@@ -205,6 +213,11 @@ html {
   }
 
   @media (max-width: 990px) {
+    #logo {
+      max-width: 105px;
+      max-height: 105px;
+    }
+
     .hover {
       &.hover-underline {
         &::before {
@@ -219,6 +232,13 @@ html {
           color: darken(white, 20%);
         }
       }
+    }
+
+    .navbar-nav {
+      line-height: 24px;
+      font-size: 1.5rem;
+      text-align: end;
+      padding-right: 17px;
     }
   }
 }
@@ -266,7 +286,8 @@ html {
   @media screen and (max-width: 850px) {
     .w-100 {
       width: 100% !important;
-      border-radius: 0%;
+      height: 80vh;
+      border-radius: 0;
     }
   }
 
@@ -716,6 +737,13 @@ html {
 
     #title-contact-method {
       margin-top: 40px;
+    }
+
+    @media (max-width: 990px) {
+      textarea {
+        width: 90vw;
+        height: 20vh;
+      }
     }
   }
 
